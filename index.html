@@ -1,32 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"/>
     <title>Contactanos</title>
-</head>
-<body>
-    <br>
-    <h1>¡CONTACTANOS, QUEREMOS ESCUCHARTE!</h1>
-    <div>
-    <section class="formulario">
-        <input class="renglones" type="text"id="nombre" name="Nombre" placeholder="Nombre">
-        <input class="renglones" type="text"id="correo" name="Email" placeholder="Email">
-        <input class="renglones" type="text"id="mensaje" name="Mensaje" id="Mensaje"placeholder="Mensaje">
-        <br>
-        <button class="boton"> Enviar</button>
-    </section>
-</div>
-    <div>
-        <h3 class="siguenos"id="follow">¡Siguenos!</h3>
-        /*queda pendiete lo de los iconos*/
-        
-
-
-        <h5 class="textFinal" id="f1">Esta es una idea de Cyberburg Desarrollo Intelegente </h5>
+  </head>
+  <body>
+    <br/>
+    <!--Este es mi titulo-->
+    <div class="container text-center" id="titulo">
+      <h1 class="encabezado">¡CONTACTANOS, QUEREMOS ESCUCHARTE!</h1>
+    </div>
+    <div class="container text-center">    <!--Este es mi formulario-->
+      <div class="container text-center" id="formularios">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <label for="nombre"></label><!--debe abarcar una unica columna y una fila-->
+              <input type="text" id="nombre" name="Nombre" style="WIDTH: 228px" placeholder="Escribe tu nombre"/>
+            </div>
+          </div>
+        </div>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <label for="email"></label><!--debe abarcar una unica columna y una fila-->
+              <input type="email" id="correo" name="Email" style="WIDTH: 228px"placeholder="Email"/>
+            </div>
+          </div>
+        </div>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+        <label for="mensaje"></label><!--debe abarcar una unica columna y una fila-->
+        <textarea type="text" id="mensaje" name="Mensaje" placeholder="Mensaje"></textarea>
+      </div>
+    </div>
+  </div>
+        <button class="boton">Enviar</button>
+      </div>
+    </div>
+    <!--Este es mi pie de página-->
+    <div class="container text-center" id="pieDePagina">
+        <h3 class="siguenos" id="follow">¡Siguenos!</h3>
+        <!--queda pendiete lo de los iconos*/-->
+        <h5 class="textFinal" id="f1">
+          Esta es una idea de Cyberburg Desarrollo Intelegente
+        </h5>
         <h5 class="textFinal" id="f2">Derechos reservados 2022</h5>
     </div>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>  
+  </body>
 </html>

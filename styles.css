@@ -1,7 +1,12 @@
-* {
+body {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+background-image: url(/assets/coffee-beans-with-props-making-coffee_1220-4526.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+position:relative;
 background-color: #b7b7a4;
 
 }
@@ -12,39 +17,65 @@ background-color: #b7b7a4;
     margin: auto;
 margin-top: 100px;
 border-radius: 4px;
-font-family: Montserrat;
+font-family: 'Montserrat', sans-serif;
 color: white;
 
 }
 
-.formulario h1 {
+.formulario h1 ,#titulo {
     font-size: 100px;
     margin-bottom: 20px;
-    font-family: Oswald;
-    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    color:white;
+
    
 }
 .renglones {
-    width: 100px;
+    
     background : white;
     padding: 18px;
     border-radius: 4px;
     margin-bottom: 16px;
-    border: 10px;solid: #ddbea9;
-    font-family: Montserrat;
+    border: 10px; 
+    font-family: 'Montserrat', sans-serif;
     
 
 
 }
-.formulario .boton{
+.formulario{
     width: 30%;
     background: #cb997e;
     border: none;
     padding: 12px;
     color: white;
     margin: 16px;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    
 
 
 
+}
+.boton{
+    background-color: rgb(22, 4, 121);
+    color: white;
+    margin: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    align-self: center;
+}
+.encabezado {
+    font-family: 'Oswald', sans-serif;
+    font-size:50px;
+
+}
+#pieDePagina{
+    font-family: 'Oswald', sans-serif;
+    font-size:30px;
+    color:white;
+
+}
+#mensaje{
+    width: 228px;
+    height: 200px;
 }
