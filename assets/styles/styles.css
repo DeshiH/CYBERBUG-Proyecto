@@ -1,21 +1,29 @@
+#navbarNav{
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+    background-color: bisque;
+}
+.nav-link{
+    color: black;
+}
+h2{
+    text-align: center;
+}
 
-.nav-header{
-    background-color: rgb(203, 153, 126)!important;
-}
-.hamburger-menu{
-    background-color: rgb(203, 153, 126);
-}
-.material-symbols-outlined{
-    color: white;
-}
-
-.row{
-   margin-top: 100px;
+.cafe{
     display: flex;
     justify-content: center;
-    
+    align-items: center;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.img-cafe{
+    align-items: flex-start;
 }
 
 footer{
-    background-color: rgb(203, 153, 126);
+    margin-top: 50px;
+    background-color: bisque;
 }
