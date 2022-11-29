@@ -1,0 +1,111 @@
+:root {
+  --a: rgb(203, 153, 126);
+  --b: rgb(221, 190, 169);
+  --c: rgb(255, 232, 214);
+  --d: rgb(183, 183, 164);
+  --texto1: black;
+  --texto2: white;
+}
+
+body {
+  background-color: var(--d);
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--texto1);
+}
+
+.topheader{
+  position: fixed;
+box-shadow: 0 4px 5px var(--texto1);
+background-color: var(--d);
+left: 0;
+top: 0;
+width: 100%;
+}
+
+.topnav{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--c);
+}
+
+.logo img {
+  border-radius: 50%;
+}
+
+#logoNavBar {
+  height: 50px;
+  width: 80px;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 0 15px;
+}
+
+.menu a {
+  color: var(--texto1);
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+  .bttn-container button {
+    padding: 1em .8em;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: black;
+    background-color: rgb(255, 232, 214);
+    border: none;
+    border-radius: 0px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .bttn-container button:hover {
+    background-color: rgb(255, 232, 214);
+    box-shadow: 0px 15px 20px rgb(183, 183, 164);
+    color: black;
+    transform: translateY(-7px);
+  }
+  
+  .bttn-container button:active {
+    transform: translateY(-1px);
+  }
+
+#rightBttns {
+  justify-items: right;
+  padding-right: 0;
+  text-align: end;
+}
+
+#leftBttns {
+  min-width: 300px;
+  justify-items: left;
+}
+
