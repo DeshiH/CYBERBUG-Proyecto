@@ -1,14 +1,25 @@
-#navbarNav{
-    justify-content: center;
-    align-items: center;
+body{
+   background-image:url("../img/patrón\ de\ imagen.png");
+   background-color: bisque;
+}
+
+
+#navbarNav,.container-fluid{
+    justify-content: end;
+    align-items: flex-end;
     text-align: end;
-    background-color: bisque;
+    background-color: rgb(244, 213, 141);
+}
+
+.navbar{
+    background-color: rgb(244, 213, 141);
 }
 .nav-link{
     color: black;
 }
 h2{
     text-align: center;
+    margin-top: 20px;
 }
 
 .cafe{
@@ -25,5 +36,8 @@ h2{
 
 footer{
     margin-top: 50px;
-    background-color: bisque;
+     
+    background-color: rgb(244, 213, 141);
 }
+
+
