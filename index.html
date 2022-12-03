@@ -12,54 +12,103 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
-      rel="stylesheet"/>
-    <title>Contactanos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,700&family=Montserrat&display=swap" rel="stylesheet">
+
+        <title>Contactanos</title>
   </head>
   <body>
-    <br/>
+    <!--Esta es la navbar-->
+    <nav class="navbar navbar-expand-lg  ">
+      <div class="container-fluid  ">
+        <img class="rounded-circle " src=".//assets/img/Coffe Kode.png" width="80px" alt="">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tienda</a>
+                
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link">Reseñas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Contáctanos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                ¿Quienes somos?
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">FAQ</a></li>
+                <li><a class="dropdown-item" href="#">Preguntas frecuentes</a></li>
+                
+                <li><a class="dropdown-item" href="#">Sobre nosotros</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+                <span class="material-symbols-outlined">
+                  person
+                  </span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+                <span class="material-symbols-outlined">
+                shopping_cart
+                </span></a>
+            </li>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </ul>
+        </div>
+      </div>
+    </nav> <!--Aqui termina la navbar-->
     <!--Este es mi titulo-->
-    <div class="container text-center" id="titulo">
-      <h1 class="encabezado">¡CONTACTANOS, QUEREMOS ESCUCHARTE!</h1>
-    </div>
-    <div class="container text-center">    <!--Este es mi formulario-->
-      <div class="container text-center" id="formularios">
-        <div class="container text-center">
-          <div class="row">
-            <div class="col">
-              <label for="nombre"></label><!--debe abarcar una unica columna y una fila-->
-              <input type="text" id="nombre" name="Nombre" style="WIDTH: 228px" placeholder="Escribe tu nombre"/>
-            </div>
+  
+    <section class="formularios">
+
+      <div class="container">
+        <div class="row justify-content-center" > <!-- DIV para que el contenido del row se justifique y se centre-->
+   
+          <div class="col-10 titulo">
+            <h1>¡CONTÁCTANOS, QUEREMOS ESCUCHARTE!</h1>
+          </div>
+
+          <div class="espacio-formulario col-10"> <!-- div identificador grupo-->
+            <input type="text" class="form-control" name="nombres" id="nombres" placeholder="Escribe tu nombre" required>
+          </div>
+
+          <div class="espacio-formulario col-10"> <!-- div identificador grupo--> 
+            <input type="text" class="form-control" name="email" id="email" placeholder="Escribe tu email" required>
+          </div>
+  
+          <div class="espacio-formulario col-10"> <!-- DIV identificador grupo se maneja en la etiqueta de estilos con #id --> 
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Mensaje" required></textarea>    
+          </div>           
+        
+          <div class="text-center">
+            <button type="submit">Enviar</button>
           </div>
         </div>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col">
-              <label for="email"></label><!--debe abarcar una unica columna y una fila-->
-              <input type="email" id="correo" name="Email" style="WIDTH: 228px"placeholder="Email"/>
-            </div>
-          </div>
-        </div>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col">
-        <label for="mensaje"></label><!--debe abarcar una unica columna y una fila-->
-        <textarea type="text" id="mensaje" name="Mensaje" placeholder="Mensaje"></textarea>
       </div>
-    </div>
-  </div>
-        <button class="boton">Enviar</button>
-      </div>
-    </div>
+    </section>
+
+    
     <!--Este es mi pie de página-->
     <div class="container text-center" id="pieDePagina">
         <h3 class="siguenos" id="follow">¡Siguenos!</h3>
         <!--queda pendiete lo de los iconos*/-->
         <h5 class="textFinal" id="f1">
-          Esta es una idea de Cyberburg Desarrollo Intelegente
+          Esta es una idea de Cyberbug Desarrollo Intelegente
         </h5>
         <h5 class="textFinal" id="f2">Derechos reservados 2022</h5>
     </div>
