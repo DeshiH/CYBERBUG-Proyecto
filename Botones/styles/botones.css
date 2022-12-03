@@ -1,0 +1,46 @@
+/*  ===================
+====== Botones ======== */
+
+button {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 0px 12px;
+    width: 76px;
+    height: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #A05C2D;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #A05C2D;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #A05C2D;
+}
+
+button:hover {
+    color: #F4D58D;
+    box-shadow: inset 0 -100px 0 0 #A05C2D;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+#button_small{
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 3px;
+    font-size:20px;
+    width: 32px;
+    height: 32px;
+    text-align:center;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
