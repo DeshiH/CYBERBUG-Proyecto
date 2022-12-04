@@ -187,23 +187,19 @@ a:hover {
 }
 
 #cuenta, #registrate{
-  font-size: 12px;
+  font-size: 11px;
 }
 
 #email_label, #password_label{
-  font-size: 14px;
-}
-
-#recordarme{
-  font-size: 10px;
+  font-size: 13px;
 }
 
 #google{
   font-size: 12px;
 } 
 
-#emailPlaceholder , #passwordPlaceholder{
-  font-size: 14px;
+#emailPlaceholder1 , #passwordPlaceholder1, #passwordPlaceholder2{
+  font-size: 13px;
 }
 
 
