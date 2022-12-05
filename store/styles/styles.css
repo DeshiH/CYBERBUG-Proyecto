@@ -1,111 +1,159 @@
-:root {
-  --a: rgb(203, 153, 126);
-  --b: rgb(221, 190, 169);
-  --c: rgb(255, 232, 214);
-  --d: rgb(183, 183, 164);
-  --texto1: black;
-  --texto2: white;
-}
-
-body {
-  background-color: var(--d);
+body{
+  background-image: url(/src/patron.png);
+  background-size:contain;
+  background-color: bisque;
+  background-repeat:initial;
+  background-position: center;
+  position:relative;
   font-family: 'Montserrat', sans-serif;
+
 }
 
-a {
+
+#navbarNav,.container-fluid{
+  justify-content: end;
+  align-items: flex-end;
+  text-align: end;
+  background-color: rgb(244, 213, 141);
+}
+
+.navbar{
+ 
+ padding: 0;
+
+}
+
+.search{
+padding-top: 8px;
+padding-bottom: 8px;
+margin-bottom: 5px;
+height: 35px;
+}
+
+.search_button{
+padding-top: 4px;
+padding-bottom: 4px;
+margin-bottom: 5px;
+height: 35px;
+}
+
+
+
+.nav-link{
+  color: black;
+}
+
+.font-navbar{
+font-family: 'Fraunces', serif;
+}
+
+.title{
+  color: rgb(160, 92, 45);
+  font-family: 'Fraunces', serif;
   text-decoration: none;
-  color: var(--texto1);
+  
 }
 
-.topheader{
-  position: fixed;
-box-shadow: 0 4px 5px var(--texto1);
-background-color: var(--d);
-left: 0;
-top: 0;
-width: 100%;
+h2{
+  text-align: center;
+  margin-top: 20px;
 }
 
-.topnav{
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  max-width: 1200px;
-  margin: 0 auto;
+
+
+footer{
+  padding: 50px;
+   margin-top: 150px;
+  background-color: rgb(244, 213, 141);
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  font-weight: 500;
-  color: var(--c);
+.links-list{
+
+list-style: none;
 }
 
-.logo img {
-  border-radius: 50%;
+.non-decoration{
+text-decoration: none;
+color: black;
 }
 
-#logoNavBar {
-  height: 50px;
-  width: 80px;
-}
+:root {
+    --a: #344E41;
+    --b: #A05C2D;
+    --c: #F4D58D;
+    --texto1: black;
+    --texto2: white;
+  }
+  
 
-/* Menu */
-.menu {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  padding: 0 15px;
-}
-
-.menu a {
-  color: var(--texto1);
-  font-size: 9px;
-  font-weight: 500;
-  line-height: 50px;
-  text-transform: uppercase;
-}
-
-  .bttn-container button {
+ 
+   
+    .bttn-container button {
+      padding: 1em .8em;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 500;
+      color: black;
+      background-color: var(--c);
+      border: none;
+      border-radius: 0px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+      outline: none;
+    }
+    
+    .bttn-container button:hover {
+      background-color: var(--b);
+      box-shadow: 0px 15px 20px var(--c);
+      color: black;
+      transform: translateY(-7px);
+    }
+    
+    .bttn-container button:active {
+      transform: translateY(-1px);
+    }
+  
+  #rightBttns {
+    justify-items: right;
+    padding-right: 0;
+    text-align: end;
+  }
+  
+  #leftBttns {
+    min-width: 300px;
+    justify-items: left;
+  }
+  
+.listaProductos button {
     padding: 1em .8em;
     font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 500;
     color: black;
-    background-color: rgb(255, 232, 214);
+    background-color: var(--c);
     border: none;
     border-radius: 0px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
-  }
-  
-  .bttn-container button:hover {
-    background-color: rgb(255, 232, 214);
-    box-shadow: 0px 15px 20px rgb(183, 183, 164);
+}  
+
+.listaProductos button:hover {
+    background-color: var(--b);
+    box-shadow: 0px 15px 20px var(--c);
     color: black;
     transform: translateY(-7px);
-  }
-  
-  .bttn-container button:active {
+}
+
+.listaProductos button:active {
     transform: translateY(-1px);
   }
 
-#rightBttns {
-  justify-items: right;
-  padding-right: 0;
-  text-align: end;
+.categoriaDisplay p{
+ font-family: 'Fraunces', serif; 
 }
-
-#leftBttns {
-  min-width: 300px;
-  justify-items: left;
-}
-
+  
