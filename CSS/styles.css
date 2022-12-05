@@ -1,0 +1,244 @@
+/* Estilos Generales */
+body{
+  background-image: 
+  url(/assets/img/fondo\ con\ \ opacidad.png);
+  background-size: 100%;
+  background-repeat: repeat;   
+}
+
+h1,h2{
+    font-size: 200%;
+    font-family: 'Fraunces', serif;
+    color: #344E41;
+}
+
+#frase{
+  padding-top: 0;
+}
+
+h3{
+  font-size:40px;
+  text-align: center;
+  font-family: 'Fraunces', serif;
+  color: #344E41;
+}
+
+h4{
+  font-family:'Montserrat', sans-serif;
+  font-size:xx-large;
+  font-weight: normal; 
+  text-align:center;
+  line-height: normal;
+  grid-template-columns: auto;
+  display: grid; 
+}
+
+p{
+ font-family:'Montserrat', sans-serif;
+ font-size: 16px;
+ font-weight: normal; 
+ text-align: justify;
+ line-height: normal;
+ grid-template-columns: auto;
+ display: grid;
+ max-width:fit-content;
+ margin: 15px 20px 75px;
+}
+
+
+#img_intro{
+ height: 10px;
+
+}
+
+button{
+  background-color: #F4D58D;
+    color:#A05C2D;
+    margin: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    align-self: center;
+}
+
+/*--------------------------------------------------------------
+# Estilos Nav Bar
+--------------------------------------------------------------*/
+
+#header {
+  font-family: 'Fraunces', serif;
+  color: #444444;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5faee3;
+  text-decoration: none;
+}
+
+/*Paleta de colores
+#344E41
+#A05C2D
+#F4D58D
+#
+ */
+
+/**{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Fraunces', serif;
+}*/
+
+/*--------------------------------------------------------------
+# NavBar
+--------------------------------------------------------------*/
+
+#navbarNav,.container-fluid{
+  justify-content: end;
+  align-items: flex-end;
+  text-align: end;
+  background-color: rgb(244, 213, 141);
+}
+
+.navbar{
+ 
+ padding: 0;
+
+}
+
+.search{
+margin-top: 10px;
+padding-bottom: 8px;
+margin-bottom: 5px;
+height: 35px;
+}
+
+.search_button{
+margin-top: 10px;
+padding-bottom: 4px;
+margin-bottom: 10px;
+height: 35px;
+}
+
+
+
+.nav-link{
+  color: black;
+}
+
+.font-navbar{
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.title h2{
+  color: rgb(160, 92, 45);
+  font-family: 'Fraunces', serif;
+  text-decoration: none;
+  
+}
+
+
+/*--------------------------------------------------------------
+# Estilos Preguntas frecuentes
+--------------------------------------------------------------*/
+.faq {
+    padding-top: 80px;
+  }
+  
+  .faq .accordion-item {
+    border: 0;
+    margin-bottom: 10px;
+  }
+  
+  .faq .accordion-collapse {
+    border: 0;
+  }
+  
+  .faq .accordion-button {
+    padding: 15px 30px 20px 60px;
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    border: 0;
+    font-size: 18px;
+    color: var(--color-default);
+    text-align: left;
+    background: #F4D58D;
+    border-radius: 15px;
+  }
+  
+  .faq .accordion-button:focus {
+    box-shadow: none;
+  }
+  
+  .faq .accordion-button:not(.collapsed) {
+    color: var(--color-primary);
+    border-bottom: 0;
+    box-shadow: none;
+  }
+  
+  .faq .question-icon {
+    position: absolute;
+    top: 14px;
+    left: 25px;
+    font-size: 20px;
+    color: var(--color-primary);
+  }
+  
+  .faq .accordion-button:after {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+  
+  .faq .accordion-body {
+    padding: 0 30px 25px 60px;
+    border: 0;
+    background: rgba(14, 29, 52, 0.03);
+    border-radius: 5px;
+  }
+
+
+/*--------------------------------------------------------------
+# Estilos About us
+--------------------------------------------------------------*/
+
+.container1{
+  text-align: center;
+}
+
+.container1 h1{
+margin-top: 30px;
+font-size: 42px;
+}
+
+.container1 .section-header{
+  text-align: center;
+  size: 80px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.img-fluid{
+  margin-top: 70px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 15px;
+  size: 400px;
+
+}
+
+#frase{
+text-align: center;
+}
+
+.text-danger{
+  font-size: 50px;
+  text-align:center;
+}
+
+.img-error{
+  size: 300px;
+}
