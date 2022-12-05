@@ -13,7 +13,7 @@
 }*/
 
 body{
-    background-image: url(/assets/LOGOS/patrón\ de\ imagen.png);
+    background-image: url(/assets/fondo\ de\ opacidad.png);
     background-size:contain;
     background-color: #f8f4ea;
     background-repeat:initial;
@@ -21,106 +21,121 @@ body{
     position:relative;
 }
 
+#header {
+  font-family: 'Fraunces', serif;
+  color: #444444;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5faee3;
+  text-decoration: none;
+}
+
+/*Paleta de colores
+#344E41
+#A05C2D
+#F4D58D
+#
+ */
+
+/**{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Fraunces', serif;
+}*/
+
 /*--------------------------------------------------------------
 # NavBar
 --------------------------------------------------------------*/
 #logo_index{
-    text-decoration: none;
-    color: #A05C2D;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    text-align: center;
+  text-decoration: none;
+  color: #A05C2D;
+  font-family: 'Fraunces', serif;
+  font-weight: bold;
+  text-align: center;
 }
 
+.font-NavBar{
+  font-family: 'Fraunces', serif;
+}
 #navbarNav,.container-fluid{
-    justify-content: end;
-    align-items: flex-end;
-    text-align: end;
-    background-color: rgb(244, 213, 141);
+  justify-content: end;
+  align-items: flex-end;
+  text-align: end;
+  background-color: rgb(244, 213, 141);
 }
 
 .navbar{
-    background-color: rgb(244, 213, 141);
+  padding: 0;
+}
+
+.search{
+padding-top: 8px;
+padding-bottom: 8px;
+margin-bottom: 5px;
+height: 35px;
+}
+
+.search_button{
+padding-top: 4px;
+padding-bottom: 4px;
+margin-bottom: 5px;
+height: 35px;
 }
 
 .nav-link{
-    color: black;
+  color: black;
 }
 
-/* === NavBar dropdown desplegable === */
-.navbar .dropdown ul {
-    display: block;
-    position: absolute;
-    left: 14px;
-    top: calc(100% + 30px);
-    margin: 0;
-    padding: 10px 0;
-    z-index: 99;
-    opacity: 0;
-    visibility: hidden;
-    background: #fff;
-    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-    transition: 0.3s;
+.font-navbar{
+font-family: 'Fraunces', serif;
 }
 
-.navbar .dropdown ul li {
-    min-width: 200px;
+.title{
+  color: rgb(160, 92, 45);
+  font-family: 'Fraunces', serif;
+  text-decoration: none;
+  
 }
 
-.navbar .dropdown ul a {
-    padding: 10px 20px;
-    font-size: 14px;
-    font-weight: 400;
-    color: #21262a;
+h2{
+  text-align: center;
+  margin-top: 20px;
 }
 
-.navbar .dropdown ul a i {
-    font-size: 12px;
+footer{
+  padding: 50px;
+  margin-top: 150px;
+  background-color: rgb(244, 213, 141);
 }
 
-.navbar .dropdown ul a:hover,
-.navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
-    color: #3498db;
+.links-list{
+
+list-style: none;
 }
 
-.navbar .dropdown:hover>ul {
-    opacity: 1;
-    top: 100%;
-    visibility: visible;
+.non-decoration{
+text-decoration: none;
+color: black;
 }
 
-.navbar .dropdown .dropdown ul {
-    top: 0;
-    left: calc(100% - 30px);
-    visibility: hidden;
-}
-
-.navbar .dropdown .dropdown:hover>ul {
-    opacity: 1;
-    top: 0;
-    left: 100%;
-    visibility: visible;
-}
-
-@media (max-width: 1366px) {
-    .navbar .dropdown .dropdown ul {
-    left: -90%;
-    }
-
-    .navbar .dropdown .dropdown:hover>ul {
-    left: -100%;
-    }
-}
 /* ==== Reseñas ====*/
+#encabezado{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
 
 #estrellitas{
     font-family: 'Montserrat', sans-serif;
     background-color: #4b6c5b;
-    border-radius: 20px;
     color: white;
     padding: 30px;
-    
+    margin-right: 0;
+    margin-left: 0;
 }
 
 #form {
@@ -144,9 +159,16 @@ body{
 }
 
 ::placeholder{
-    font-size: 12px;
+    font-size: 14px;
     text-align:left;
     color: white;
+}
+
+.is-required:after {
+  content: '*';
+  margin-left: 3px;
+  color:darkorange;
+  font-weight:lighter;
 }
 
 input[type="radio"] {
@@ -184,5 +206,12 @@ textarea {
 }
 
 button{
-    text-align: right;
+  text-align: right;
+  border-style:solid;
+  border-color: #21262a;
+  color: #f8f4ea;
+}
+
+.card-text{
+  text-align: left;
 }
