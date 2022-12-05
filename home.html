@@ -4,38 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-<!-- JavaScript Bundle with Popper -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>    
+
 <link rel="stylesheet" href="./assets/styles/styles.css">
 <title>Document</title>
 </head>
 <body>
 
-   <nav class="navbar navbar-expand-lg  ">
+
+  <nav class="navbar navbar-expand-lg  ">
     <div class="container-fluid  ">
-      <img class="rounded-circle " src=".//assets/img/Coffe Kode.png" width="80px" alt="">
+      <img class="rounded-circle " src="./assets/img/Variación 3.png" width="40px" alt=""> <a class="title" href=""><h4 >Coffee Kode</h4></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse " id="navbarNav">
+
+      <div class="collapse navbar-collapse font-navbar" id="navbarNav">
         <ul class="navbar-nav">
-          
           <li class="nav-item">
             <a class="nav-link" href="#">Tienda</a>
-              
           </li>
           
           <li class="nav-item">
             <a class="nav-link">Reseñas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">Contactanos</a>
+            <a class="nav-link">Contáctanos</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              ¿Quienes somos?
+              ¿Quiénes somos?
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">FAQ</a></li>
@@ -57,19 +62,15 @@
               shopping_cart
               </span></a>
           </li>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 search" type="search" placeholder="Escribe aquí" aria-label="Search">
+          <button class="btn btn-outline-success search_button" type="submit">Buscar</button>
+      </form>
       </div>
     </div>
   </nav> 
   <!-- Final de la navbar -->
-
-
-
-
   <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -77,25 +78,28 @@
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
+      
       <div class="carousel-item active" data-bs-interval="10000">
-        <img src="./assets/img/cafe (1).jpg" height="400px" class="d-block w-100" alt="...">
+        
+        <img src="./assets/img/package.jpg"  class="d-block w-100" alt="...">
+        
         <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
+          <h5>Nuestros Kits</h5>
+          <p>Nuestros Kits con logo para diferenciarnos de otras marcas.</p>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="2000">
-        <img src="./assets/img/cafe.jpg" height="400px" class="d-block w-100" alt="...">
+        <img src="./assets/img/package.jpg"   class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
+          <h5>Nuestros Kits</h5>
+          <p>Nuestros Kits con logo para diferenciarnos de otras marcas.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="./assets/img/cafe-granos.jpg" height="400px" class="d-block w-100" alt="...">
+        <img src="./assets/img/package.jpg"  class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
+          <h5>Nuestros Kits</h5>
+          <p>Nuestros Kits con logo para diferenciarnos de otras marcas.</p>
         </div>
       </div>
     </div>
@@ -110,109 +114,279 @@
   </div>
 
 
-
- 
   
  
-
-
-
-
-
-
-<!-- Inicio del menu de productos -->
-      <h2>CONOCE NUESTROS CAFES</h2>
-
-<div class="container">
-  <div class="row cafe">
-    <div class="card" style="width: 18rem;">
-    <img src="./assets/img/cafe (1).jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <div class="container">
+    <h2>CONOCE NUESTRA VARIEDAD DE CAFÉ</h2>
+    <label for="one" class="form-label"></label>
+    <input type="radio" name="dot" placeholder="" id="one">
+    <label for="two" class="form-label"></label>
+    <input type="radio" name="dot" placeholder="" id="two">
+    <div class="main-card">
+      <div class="cards">
+        <div class="caras">
+         <div class="content">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/cafe (1).jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+            </div>
+          </div>
+         
+         </div>
+        </div>
+        <div class="card-coffee">
+         <div class="content">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/cafe (1).jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+            </div>
+          </div>
+         
+         </div>
+        </div>
+        <div class="card-coffee">
+         <div class="content">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/cafe (1).jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+            </div>
+          </div>
+         
+         </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card-coffee">
+         <div class="content">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/cafe (1).jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+            </div>
+          </div>
           
+         </div>
+        </div>
+        <div class="card-coffee">
+         <div class="content">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/cafe (1).jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+            </div>
+          </div>
+           
+         </div>
+        </div>
+        <div class="card-coffee">
+         <div class="content">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/cafe (1).jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+            </div>
+          </div>
+          
+         </div>
+        </div>
+      </div>
+    </div>
+    <div class="button">
+      <label for="one" class=" active one"></label>
+      <label for="two" class="two"></label>
     </div>
   </div>
+ 
+
   
+
+  <div class="container">
+    <h2>CONOCE NUESTRA VARIEDAD DE CAFÉ</h2>
+    <input type="radio" name="dot" id="three">
+    <input type="radio" name="dot" id="four">
+    <div class="main-card">
+      <div class="cards">
+        <div class="card-coffee">
+         <div class="content">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/cafe (1).jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+            </div>
+          </div>
+         
+         </div>
+        </div>
+        <div class="card-coffee">
+         <div class="content">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/cafe (1).jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+            </div>
+          </div>
+         
+         </div>
+        </div>
+        <div class="card-coffee">
+         <div class="content">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/cafe (1).jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+            </div>
+          </div>
+         
+         </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card-coffee">
+         <div class="content">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/cafe (1).jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+            </div>
+          </div>
+          
+         </div>
+        </div>
+        <div class="card-coffee">
+         <div class="content">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/cafe (1).jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+            </div>
+          </div>
+           
+         </div>
+        </div>
+        <div class="card-coffee">
+         <div class="content">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/cafe (1).jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+            </div>
+          </div>
+          
+         </div>
+        </div>
+      </div>
+    </div>
+    <div class="button">
+      <label for="one" class=" active one"></label>
+      <label for="two" class="two"></label>
+    </div>
+  </div>
+
+
   
-  
-  <div class="card" style="width: 18rem;">
-    <img src="./assets/img/cafe (1).jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <div class="container">
+    <h2>CONOCE NUESTRA VARIEDAD DE CAFÉ</h2>
+  <input  type="radio" name="dot" id="five">
+    <input  type="radio" name="dot" id="six">
+    <div class="main-card">
       
+      <div class="cards">
+        <div class="card-coffee">
+         <div class="content">
+          
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/cafe (1).jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+            </div>
+          </div>
+         
+         </div>
+        </div>
+        <div class="card-coffee">
+         <div class="content">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/cafe (1).jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+            </div>
+          </div>
+         
+         </div>
+        </div>
+        <div class="card-coffee">
+         <div class="content">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/cafe (1).jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+            </div>
+          </div>
+         
+         </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card-coffee">
+         <div class="content">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/cafe (1).jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+            </div>
+          </div>
+          
+         </div>
+        </div>
+        <div class="card-coffee">
+         <div class="content">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/cafe (1).jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+            </div>
+          </div>
+           
+         </div>
+        </div>
+        <div class="card-coffee">
+         <div class="content">
+           
+           <div class="card" style="width: 18rem;">
+            <img src="./assets/img/cafe (1).jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+            </div>
+          </div>
+          
+         </div>
+        </div>
+      </div>
     </div>
-  </div>
-  
-  <div class="card" style="width: 18rem;">
-    <img src="./assets/img/cafe (1).jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      
-    </div>
-  </div>
-  </div>
-  
-  <h2>CAFE MOLIDO</h2>
-  
-  <div class="row cafe">
-    <div class="card" style="width: 18rem;">
-    <img src="./assets/img/cafe (1).jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      
-    </div>
-  </div>
-  
-  <div class="card" style="width: 18rem;">
-    <img src="./assets/img/cafe (1).jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      
-    </div>
-  </div>
-  
-  <div class="card" style="width: 18rem;">
-    <img src="./assets/img/cafe (1).jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     
-    </div>
   </div>
-  </div>
-  
-  <h2>CAFE EN GRANO</h2>
-  
-  <div class="row cafe">
-    <div class="card" style="width: 18rem;">
-    <img src="./assets/img/cafe (1).jpg" class="card-img-top" alt="...">
-    <div class="card-body ">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      
-    </div>
-  </div>
-  
-  <div class="card" style="width: 18rem;">
-    <img src="./assets/img/cafe (1).jpg" class="card-img-top" alt="...">
-    <div class="card-body ">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      
-    </div>
-  </div>
-  
-  <div class="card" style="width: 18rem;">
-    <img src="./assets/img/cafe (1).jpg" class="card-img-top" alt="...">
-    <div class="card-body ">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      
-    </div>
-  </div>
-  </div>
-</div>
-
-
-
-
-
+ 
 
 
 <footer id="footer">
@@ -221,8 +395,8 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-lg-4 col-md-6 footer-contact text-md-start text-center">
-          <img class="rounded-circle" src="./assets/img/Variación 3.png" width="150px" alt="">
+        <div class="col-lg-4 col-md-4 footer-contact text-md-start text-center">
+          <h4>Dirección </h4>
           
           <p>
             Calle 123, colonia Cafetaleros  <br>
@@ -230,19 +404,38 @@
             México <br> <br>
             <strong>Phone:</strong> 5555555555<br>
             <strong>Email:</strong> AtencionAclientes@coffeekode.com<br>
+
+            <strong>Integrantes:</strong><br>Daniel Arturo De la Cruz Maldonado. <br>
+            Daniela Sarahi Uribe Castro. <br>
+            Miguel Ángel Virrueta Virrueta. <br>
+            Alejandro Gilberto Diaz Pineda. <br>
+            Carlos Alberto Pérez Carbajal. <br>
+            Natalia Abril Flores Panduro. <br>
+            Víctor Rodrigo Mosqueda Zacarias.
+            
           </p>
         </div>
 
-        <div class="col-lg-3 col-md-6 footer-links">
+        <div class="col-lg-4 col-md-6 footer-links text-center text-md-right">
           <h4>Links de uso </h4>
-          <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Acerca de nosotros</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Preguntas frecuentes</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Aviso de privacidad</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Contactanos</a></li>
+          <ul class="links-list">
+            <li> <a class="non-decoration" href="#">Home</a></li>
+            <li> <a class="non-decoration" href="#">Acerca de nosotros</a></li>
+            <li> <a class="non-decoration" href="#">Preguntas frecuentes</a></li>
+            <li> <a class="non-decoration" href="#">Aviso de privacidad</a></li>
+            <li> <a class="non-decoration" href="#">Contactanos</a></li>
           </ul>
         </div>
+
+        <div class=" col-md-4 social-links text-center text-md-right pt-3 pt-md-0">
+          <h4>Redes Sociales</h4>
+          <a href="#" class="twitter"><i class="bx bxl-twitter"><img class="rounded-pill" src="./assets/img/facebook.png" width="50px" alt="Facebook"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"><img class="rounded-pill" src="./assets/img/linkedin.png" width="50px" alt="Facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"><img  src="./assets/img/github.png" width="50px" alt="Facebook"></i></a>
+          
+        </div>
+
+
       </div>
     </div>
   </div>
@@ -251,61 +444,20 @@
 
     <div class="me-md-auto text-center text-md-start">
       <div class="copyright">
-        <strong><span>© 2022 Copyright: Coffee Kode Cyberbug-team</span></strong>
+        <strong><span>© 2022 Copyright. Coffee Kode Cyberbug-team.   Designed by <a  href="https://github.com/DeshiH/CYBERBUG-Proyecto">Coffee Kode</a></span></strong>
       </div>
-      <div class="credits">
-    
-        Designed by <a href="https://github.com/DeshiH/CYBERBUG-Proyecto">Coffee Kode</a>
-      </div>
-    </div>
-    
-    <div class="social-links text-center text-md-right pt-3 pt-md-0">
-      <h4>Redes Sociales</h4>
-      <a href="#" class="twitter"><i class="bx bxl-twitter"><img src="./assets/img/facebook.png" width="20px" alt="Facebook"></i></a>
-      <a href="#" class="facebook"><i class="bx bxl-facebook"><img src="./assets/img/linkedin.png" width="20px" alt="Facebook"></i></a>
-      <a href="#" class="instagram"><i class="bx bxl-instagram"><img src="./assets/img/github.png" width="20px" alt="Facebook"></i></a>
       
-      <!-- <a href="#" class="linkedin"><i class="bx bxl-linkedin"><img src="./assets/img/facebook.png" width="20px" alt="Facebook"></i></a> -->
     </div>
+    
+    
   </div>
-</footer><!-- End Footer -->
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</footer>
 
 
 
       
+
+
+    
 </body>
 </html>

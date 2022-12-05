@@ -1,6 +1,12 @@
 body{
-   background-image:url("../img/patrón\ de\ imagen.png");
-   background-color: bisque;
+    background-image: url(../img/patron.png);
+    background-size:contain;
+    background-color: bisque;
+    background-repeat:initial;
+    background-position: center;
+    position:relative;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 
@@ -12,32 +18,110 @@ body{
 }
 
 .navbar{
-    background-color: rgb(244, 213, 141);
+   
+   padding: 0;
+  
 }
+
+.search{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 5px;
+  height: 35px;
+}
+
+.search_button{
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-bottom: 5px;
+  height: 35px;
+}
+
+
+
 .nav-link{
     color: black;
 }
+
+.font-navbar{
+  font-family: 'Fraunces', serif;
+}
+
+.title{
+    color: rgb(160, 92, 45);
+    font-family: 'Fraunces', serif;
+    text-decoration: none;
+    
+}
+
 h2{
     text-align: center;
     margin-top: 20px;
 }
 
-.cafe{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    gap: 30px;
-}
 
-.img-cafe{
-    align-items: flex-start;
-}
 
 footer{
-    margin-top: 50px;
-     
+    padding: 50px;
+     margin-top: 150px;
     background-color: rgb(244, 213, 141);
+}
+
+.links-list{
+
+  list-style: none;
+}
+
+.non-decoration{
+  text-decoration: none;
+color: black;
+}
+
+
+
+
+/* PARTE DE LAS CARDS CON SLIDER */
+
+
+.container{
+  max-width: 950px;
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 0;
+}
+.container .main-card{
+  display: flex;
+  justify-content: space-evenly;
+  width: 200%;
+  transition: 1s;
+}
+#two:checked  ~ .main-card, #four:checked ~ .main-card, #six:checked  ~ .main-card{
+  margin-left: -100%;
+}
+.container .main-card .cards{
+  width: calc(100% / 2 - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px;
+  justify-content: space-between;
+}
+.main-card .cards .card{
+  
+
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+
+
+
+
+/* METODOS DE PAGO */
+
+
+.tarjetas{
+  padding: 10px;
 }
 
 
