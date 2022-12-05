@@ -1,0 +1,108 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-image: url(/assets/patrón\ de\ imagen.png);
+    background-size:contain;
+    background-color: #f8f4ea;
+    background-repeat:initial;
+    background-position: center;
+    position:relative;
+}
+
+#gracias{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin:30px
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    display: inline-block;
+    padding: 5px 1px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #a05c2d;
+    background-color: #f4d58d;
+}
+
+/*NAV BAR*/
+
+
+#navbarNav,.container-fluid{
+    justify-content: end;
+    align-items: flex-end;
+    text-align: end;
+    background-color: rgb(244, 213, 141);
+}
+
+.navbar{
+   
+   padding: 0;
+  
+}
+
+.search{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 5px;
+  height: 35px;
+}
+
+.search_button{
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-bottom: 5px;
+  height: 35px;
+}
+
+
+
+.nav-link{
+    color: black;
+}
+
+.font-navbar{
+  font-family: 'Fraunces', serif;
+}
+
+.title{
+    color: rgb(160, 92, 45);
+    font-family: 'Fraunces', serif;
+    text-decoration: none;
+    
+}
+
+
+
+footer{
+    padding: 50px;
+     margin-top: 150px;
+    background-color: rgb(244, 213, 141);
+}
+
+.links-list{
+
+  list-style: none;
+}
+
+.non-decoration{
+  text-decoration: none;
+color: black;
+}
+
+

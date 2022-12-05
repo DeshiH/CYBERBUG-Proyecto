@@ -1,0 +1,188 @@
+
+
+/*Paleta de colores
+#344E41
+#A05C2D
+#F4D58D
+#
+ */
+
+/**{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Fraunces', serif;
+}*/
+
+body{
+    background-image: url(/assets/LOGOS/patrón\ de\ imagen.png);
+    background-size:contain;
+    background-color: #f8f4ea;
+    background-repeat:initial;
+    background-position: center;
+    position:relative;
+}
+
+/*--------------------------------------------------------------
+# NavBar
+--------------------------------------------------------------*/
+#logo_index{
+    text-decoration: none;
+    color: #A05C2D;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+#navbarNav,.container-fluid{
+    justify-content: end;
+    align-items: flex-end;
+    text-align: end;
+    background-color: rgb(244, 213, 141);
+}
+
+.navbar{
+    background-color: rgb(244, 213, 141);
+}
+
+.nav-link{
+    color: black;
+}
+
+/* === NavBar dropdown desplegable === */
+.navbar .dropdown ul {
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: calc(100% + 30px);
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+}
+
+.navbar .dropdown ul li {
+    min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #21262a;
+}
+
+.navbar .dropdown ul a i {
+    font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a {
+    color: #3498db;
+}
+
+.navbar .dropdown:hover>ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+    top: 0;
+    left: calc(100% - 30px);
+    visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover>ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+    visibility: visible;
+}
+
+@media (max-width: 1366px) {
+    .navbar .dropdown .dropdown ul {
+    left: -90%;
+    }
+
+    .navbar .dropdown .dropdown:hover>ul {
+    left: -100%;
+    }
+}
+/* ==== Reseñas ====*/
+
+#estrellitas{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #4b6c5b;
+    border-radius: 20px;
+    color: white;
+    padding: 30px;
+    
+}
+
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+}
+
+#form p {
+    text-align: center;
+}
+
+#logo{
+    align-items: center;
+}
+
+#inputReseñas1, #inputReseñas2 {
+    font-size: 14px;
+    text-align:left;
+    color: white;
+}
+
+::placeholder{
+    font-size: 12px;
+    text-align:left;
+    color: white;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    color:white;
+    font-size: 22px;
+}
+
+.clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+label:hover,
+label:hover ~ label {
+    color:goldenrod;
+}
+
+input[type="radio"]:checked ~ label {
+    color: goldenrod;
+}
+
+#ranking{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+}
+
+button{
+    text-align: right;
+}
