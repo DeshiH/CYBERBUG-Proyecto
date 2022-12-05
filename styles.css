@@ -2,6 +2,35 @@
     color: white;
 }
 
-.user{
-    float: inline-end;
+body{
+    background-image: url(/imagencoffee/coffee.png);
+    background-size: 90%;
+    background-repeat: repeat;
+    
+   
+
+   
+}
+
+.container {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: justify;
+    line-height: 20px;
+    grid-template-columns: auto;
+    display: grid;
+    max-width: 1000;
+    margin: 25px 50px 75px;
+    backdrop-filter: blur(3px);
+    background-color: white;
+}
+
+h1{
+    font-family: 'Fraunces' , sans-serif;
+     text-align: center;
+     color: #344E41;
+     font-size: 40px;
+    
+    
 }
