@@ -23,6 +23,16 @@ body{
  
 }
 
+a {
+   color: #A05C2D;
+   text-decoration: none;
+ }
+ 
+ a:hover {
+   color: #A05C2D;
+   text-decoration: none;
+ }
+
 .search{
  padding-top: 8px;
  padding-bottom: 8px;
@@ -79,22 +89,43 @@ color: black;
    place-items: center;
 }
 */
-/* alineacion cards*/
+/* alineacion cards
 .tarjetasdeProductos{
-  /* display: flex;*/
+   display: flex;
    align-items: center;
    justify-content: center;
-   width: 600px;
+  align-self: center;
+  -ms-flex-item-align: center;
+}*/
+
+.padre {
+background-color: #F4D58D;
+font-family: 'Montserrat';
+font-size: 16px;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+/*Hace responsive la el grid padre*/
+.container-fluid{
+   width: 100%;
+}
+/*Personalización de boton */
+
+.pay_button{
+background-color: #F4D58D;   
+padding-top: 4px;
+padding-bottom: 4px;
+margin-bottom: 5px;
+height: 35px;
+width:50%;
+margin-left:25%;
+margin-right:25%;
 }
 
-/* alineacion se lo copie al vic preguntar
-
-.material-symbols-outlined{
-   color: white;
-}
+/* alineacion responsive*/
 
 .user{
    float: inline-end;
-}*/
-
+}
  
