@@ -1,0 +1,188 @@
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+#header {
+    font-family: 'Fraunces', serif;
+    color: #444444;
+  }
+  
+  a {
+    color: #A05C2D;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #A05C2D;
+    text-decoration: none;
+  }
+  
+  /*Paleta de colores
+  #344E41
+  #A05C2D
+  #F4D58D
+  #
+   */
+  
+  /**{
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Fraunces', serif;
+  }*/
+  
+  /*--------------------------------------------------------------
+  # NavBar
+  --------------------------------------------------------------*/
+  #logo_index{
+    text-decoration: none;
+    color: #A05C2D;
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .font-NavBar{
+    font-family: 'Fraunces', serif;
+  }
+  #navbarNav,.container-fluid{
+    justify-content: end;
+    align-items: flex-end;
+    text-align: end;
+    background-color: rgb(244, 213, 141);
+  }
+  
+  .navbar{
+    padding: 0;
+  }
+  
+  .search{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 5px;
+  height: 35px;
+  }
+  
+  .search_button{
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-bottom: 5px;
+  height: 35px;
+  }
+  
+  .nav-link{
+    color: black;
+  }
+  
+  .font-navbar{
+  font-family: 'Fraunces', serif;
+  }
+  
+  .title{
+    color: rgb(160, 92, 45);
+    font-family: 'Fraunces', serif;
+    text-decoration: none;
+  }
+  
+  h2{
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  footer{
+    padding: 50px;
+    margin-top: 150px;
+    background-color: rgb(244, 213, 141);
+  }
+  
+  .links-list{
+  list-style: none;
+  }
+  
+  .non-decoration{
+  text-decoration: none;
+  color: black;
+  }
+  
+  #body{
+    background-image: url(./assets/60porcientoopaco.png);
+    background-color: rgb(249, 217, 177);/*#5b9d7d*/
+    background-size: cover;
+    background-repeat:repeat;
+    background-position: center;
+    position:relative;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  #encabezado{
+    font-family: 'Fraunces', serif;
+  }
+  
+  #tarjeta{
+    align-self: center;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    width: auto;
+    height: 500px;
+  }
+  
+  #formulario{
+    padding: 30px;
+  }
+  .center{
+    margin:auto;
+  }
+  
+  #card{
+    background-color:white; /*#5b9d7d*/
+    -webkit-box-shadow: 1px 2px 16px 0px #000000; 
+    box-shadow: 1px 2px 16px 0px #000000;
+  
+  }
+  /*
+  #login-icon, #password-icon{
+    background-color:bisque;
+  }*/
+  
+  .prueba_inputs{
+    text-align: left;
+  }
+  #logo{
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #iniciarSesion{
+    color:ghostwhite;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  #cuenta, #registrate{
+    font-size: 12px;
+  }
+  
+  #email_label, #password_label{
+    font-size: 14px;
+  }
+  
+  .is-required:after {
+    content: '*';
+    margin-left: 3px;
+    color:red;
+    font-weight:lighter;
+  }
+  
+  #inputPlaceholder , #passwordPlaceholder{
+    font-size: 8px;
+  }
+  
+  #button_normal{
+    background-color:#344E41; /*#344E41*/
+    color: white;
+    font-size:18px;
+    
+  }
+#alinearTexto{
+  text-align:left;
+}
+  
+  
