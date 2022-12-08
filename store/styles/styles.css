@@ -6,9 +6,18 @@ body{
   background-position: center;
   position:relative;
   font-family: 'Montserrat', sans-serif;
-
+  overflow-x: hidden;
 }
 
+a {
+  color: #A05C2D;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #A05C2D;
+  text-decoration: none;
+}
 
 #navbarNav,.container-fluid{
   justify-content: end;
@@ -78,7 +87,7 @@ color: black;
 }
 
 :root {
-    --a: #344E41;
+    --a: #344E41 ;
     --b: #A05C2D;
     --c: #F4D58D;
     --texto1: black;
@@ -86,34 +95,13 @@ color: black;
   }
   
 
- 
+ button {
+  font-family: 'Montserrat', serif;
+  font-size: 10px;
+  font-weight: 900;
+ }
    
-    .bttn-container button {
-      padding: 1em .8em;
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-weight: 500;
-      color: black;
-      background-color: var(--c);
-      border: none;
-      border-radius: 0px;
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease 0s;
-      cursor: pointer;
-      outline: none;
-    }
-    
-    .bttn-container button:hover {
-      background-color: var(--b);
-      box-shadow: 0px 15px 20px var(--c);
-      color: black;
-      transform: translateY(-7px);
-    }
-    
-    .bttn-container button:active {
-      transform: translateY(-1px);
-    }
+ 
   
   #rightBttns {
     justify-items: right;
@@ -122,14 +110,25 @@ color: black;
   }
   
   #leftBttns {
-    min-width: 300px;
     justify-items: left;
   }
   
-.listaProductos button {
+#categoriaDisplay{
+  font-size: 25px;
+}
+
+.card-header{
+  font-size: 25px;
+}
+
+.precio{
+  font-size: 20px;
+}
+
+.storeButton1 {
     padding: 1em .8em;
     font-size: 10px;
-    text-transform: uppercase;
+    font-family: 'Montserrat', serif;
     letter-spacing: 2px;
     font-weight: 500;
     color: black;
@@ -142,18 +141,38 @@ color: black;
     outline: none;
 }  
 
-.listaProductos button:hover {
+.storeButton1:hover {
     background-color: var(--b);
     box-shadow: 0px 15px 20px var(--c);
     color: black;
     transform: translateY(-7px);
 }
 
-.listaProductos button:active {
+.storeButton1:active {
     transform: translateY(-1px);
   }
 
-.categoriaDisplay p{
+#categoriaDisplay{
  font-family: 'Fraunces', serif; 
 }
+
+.cardbody{
+  align-items: center;
   
+}
+
+.card-header{
+  background-color: #f2ead6;
+}
+
+.card-body{
+  background-color: #f2ead6;
+  margin: 0px 0px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+.precio{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
