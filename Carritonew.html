@@ -21,6 +21,7 @@
  
  
      <title>Carrito de compras </title>
+     
  <!-- Link a hoja CSS-->
  <link rel="stylesheet" href="./stylescarrito.css">
  
@@ -30,7 +31,7 @@
    <!-- ======= NavBar ======= -->
    <nav class="navbar navbar-expand-lg  ">
      <div class="container-fluid  ">
-       <img class="rounded-circle " src="./assets/img/Variación 3.png" width="40px" alt=""> <a class="title" href=""><h4 >Coffee Kode</h4></a>
+       <img class="rounded-circle " src="./img/Coffe Kode.png" width="40px" alt=""> <a class="title" href=""><h4 >Coffee Kode</h4></a>
        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
        </button>
@@ -110,15 +111,19 @@
         <div class="container text-center p-2">
             <div class="row">
             <div class="col-4">
-                <img src="./img/4variedades.png" width="150px" alt="Café4variedades">
+                <img src="./img/Amaite Bolsa.jpeg" width="150px" class="img" alt="Café4variedades">
             </div>
             <div class="col-3">
                  $90
             </div>
-            <div class="col-2">
-                3
+            <div class="col-3">
+              <div class="container">
+              <button type="button" class="btn btn-primary btn-sm">+</button> 
+               3
+              <button type="button" class="btn btn-primary btn-rs">-</button>
             </div>
-           <div class="col-3">
+            </div>
+           <div class="col-2">
               $180
             </div>
             </div>
@@ -130,15 +135,18 @@
             <div class="container text-center p-2">
                 <div class="row">
                 <div class="col-4">
-                <img src="./img/Coffee Kode.com.png" width="150px" alt="Cafétostado">
+                <img src="./img/Ixchel Bolsa2.jpeg" width="150px" class="img"  alt="Cafétostado">
                 </div>
                 <div class="col-3">
                      $200
                 </div>
-                <div class="col-2">
-                   3
-                </div>
                 <div class="col-3">
+        
+                  <button type="button" class="btn btn-primary btn-sm">+</button> 
+                  3
+                  <button type="button" class="btn btn-primary btn-rs">-</button>
+                </div>
+                <div class="col-2">
                    $600
                 </div>
                 </div>
@@ -150,15 +158,19 @@
             <div class="container text-center p-2">
                 <div class="row">
                 <div class="col-4">
-                    <img src="./img/CostalCK2.png" width="150px"  alt="Costalcafé">
+                    <img src="./img/Yatzil Costal.jpeg" width="150px" class="img"  alt="Costalcafé">
                 </div>
                 <div class="col-3">
                      $350
                 </div>
-                <div class="col-2">
-                    3
+                <div class="col-3">
+                
+                  <button type="button" class="btn btn-primary btn-sm">+</button> 
+                  3
+                  <button type="button" class="btn btn-primary btn-rs">-</button>
+
                 </div>
-               <div class="col-3">
+               <div class="col-2">
                   $1,050
                 </div>
                 </div>
@@ -169,14 +181,14 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-5">
                         
                     </div>
                     <!-- ===== Div ultima linea de total a pagar ===== -->
-                    <div class="col-4">
+                    <div class="col-3">
                         Total a pagar
                     </div>
-                    <div class="col-2">
+                    <div class="col-4">
                         $3,333 
                     </div>
                 </div>
@@ -192,38 +204,116 @@
       <br>
       <br>
  <!-- ===== Carrusel ===== -->
- <div class="container text-center justify-content-center col-lg-5 col-5 p-0
- ">
-    <div class="row justify-content-center">
-
-    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+   
+ <div class="carousel">
+      <div class="container carousel">
+        <div class="tittle">
+        <h2>Aprovecha nuestras promociones</h2>
+      </div>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <label for="one" class="form-label"></label>
+        <input type="radio" name="dot" placeholder="" id="one">
+        <label for="two" class="form-label"></label>
+        <input type="radio" name="dot" placeholder="" id="two">
+        <div class="main-card">
+          <div class="cards">
+            <div class="caras">
+             <div class="content">
+              <div class="card" style="width: 18rem;">
+                <img src="./img/promo.jpeg" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <p class="card-text">Yatzil, Yaxkin y Amaité. 3 bolsas de café, grano molido 1kg cada una.</p>
+                  <p>$399.99</p>
+                  <button type="button" class="btn btn-add btn-sm">Añadir+</button> 
+                  
+                </div>
+              </div>
+             
+             </div>
+            </div>
+            <div class="card-coffee">
+             <div class="content">
+              <div class="card" style="width: 18rem;">
+                <img src="./img/promo2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <p class="card-text">Yaztil, Yaxkin, Imox, Amaité, Ixcehl. 5 bolsas de café, grano entero 1kg cada una.</p>
+                  <p>$549.99</p>
+                  <button type="button" class="btn btn-add btn-sm">Añadir+</button> 
+                  
+                </div>
+              </div>
+             
+             </div>
+            </div>
+            <div class="card-coffee">
+             <div class="content">
+              <div class="card" style="width: 18rem;">
+                <img src="./img/promo3.jpeg" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <p class="card-text">Yaxkin, Yaztil, Amaité. 3 bolsas de café, grano molido 1kg cada una.</p>
+                  <p>$349.99</p>
+                  <button type="button" class="btn btn-add btn-sm">Añadir+</button> 
+                  
+                </div>
+              </div>
+             
+             </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="card-coffee">
+             <div class="content">
+              <div class="card" style="width: 18rem;">
+                <img src="./img/promo4.jpeg" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <p class="card-text">Yaxkin. 2 bolsas de grano entero 1kg.</p>
+                  <p>$279.99</p>
+                  <button type="button" class="btn btn-add btn-sm">Añadir+</button> 
+                  
+                </div>
+              </div>
+              
+             </div>
+            </div>
+            <div class="card-coffee">
+             <div class="content">
+              <div class="card" style="width: 18rem;">
+                <img src="./img/promo5.jpeg" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <p class="card-text">Ixchel. Bolsa de grano molido 1kg y bolsa de grano entero 1kg.</p>
+                  <p>$249.99</p>
+                  <button type="button" class="btn btn-add btn-sm">Añadir+</button> 
+                  
+                </div>
+              </div>
+               
+             </div>
+            </div>
+            <div class="card-coffee">
+             <div class="content">
+              <div class="card" style="width: 18rem;">
+                <img src="./img/Ixchel.jpeg" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <p class="card-text">Ixchel. Bolsa de grano entero 1kg y una taza conmemorativa.</p>
+                  <p>$333.99</p>
+                  <button type="button" class="btn btn-add btn-sm">Añadir+</button> 
+                  
+                </div>
+              </div>
+              
+             </div>
+            </div>
+          </div>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="1000">
-            <img src="./img/4variedades.png" width="100px" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="1000">
-            <img src="./img/CostalCK2.png" width="100px" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="1000">
-            <img src="./img/CostalCK.png" width="100px" class="d-block w-100" alt="...">
-          </div>
+        <div class="button">
+          <label for="one" class=" active one"></label>
+          <label for="two" class="two"></label>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </div>
-</div>
+
+  </div>
+
 <!-- ===== Footer ===== -->
     <footer id="footer">
 
@@ -289,6 +379,7 @@
         </div>
       </footer>
       
-          
+      <!-- ===== Link JS ===== -->
+      <script src="./Carrito.js"></script>
       </body>
       </html>
