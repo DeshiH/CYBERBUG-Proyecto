@@ -43,6 +43,7 @@ a:hover {
 .font-NavBar{
   font-family: 'Fraunces', serif;
 }
+
 #navbarNav,.container-fluid{
   justify-content: end;
   align-items: flex-end;
@@ -80,6 +81,7 @@ font-family: 'Fraunces', serif;
   color: rgb(160, 92, 45);
   font-family: 'Fraunces', serif;
   text-decoration: none;
+
 }
 
 h2{
@@ -94,14 +96,14 @@ footer{
 }
 
 .links-list{
-
-list-style: none;
+  list-style: none;
 }
 
 .non-decoration{
 text-decoration: none;
 color: black;
 }
+
 
 #body{
   background-image: url(/assets/img/patrón\ de\ imagen.png);
@@ -116,6 +118,7 @@ color: black;
 
 #encabezado{
   font-family: 'Fraunces', serif;
+  
 }
 
 #tarjeta{
@@ -155,7 +158,7 @@ color: black;
 }
 
 #email_label, #password_label{
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .is-required:after {
@@ -165,16 +168,12 @@ color: black;
   font-weight:lighter;
 }
 
-#recordarme{
-  font-size: 12px;
-}
-
 #google{
   font-size: 14px;
 } 
 
-#emailPlaceholder , #passwordPlaceholder{
-  font-size: 14px;
+#emailPlaceholder1 , #passwordPlaceholder1, #passwordPlaceholder2{
+  font-size: 13px;
 }
 
 
