@@ -80,124 +80,96 @@ height: 35px;
 
 
 /*--------------------------------------------------------------
-# Estilos Preguntas frecuentes
---------------------------------------------------------------*/
-.faq {
-    padding-top: 80px;
-  }
-  
-  .faq .accordion-item {
-    border: 0;
-    margin-bottom: 10px;
-  }
-  
-  .faq .accordion-collapse {
-    border: 0;
-  }
-  
-  .faq .accordion-button {
-    padding: 15px 30px 20px 60px;
-    font-family: 'Fraunces', serif;
-    font-weight: 600;
-    border: 0;
-    font-size: 18px;
-    color: var(--color-default);
-    text-align: left;
-    background: #F4D58D;
-    border-radius: 15px;
-  }
-  
-  .faq .accordion-button:focus {
-    box-shadow: none;
-  }
-  
-  .faq .accordion-button:not(.collapsed) {
-    color: var(--color-primary);
-    border-bottom: 0;
-    box-shadow: none;
-  }
-  
-  .faq .question-icon {
-    position: absolute;
-    top: 14px;
-    left: 25px;
-    font-size: 20px;
-    color: var(--color-primary);
-  }
-  
-  .faq .accordion-button:after {
-    position: absolute;
-    right: 15px;
-    top: 15px;
-  }
-  
-  .faq .accordion-body {
-    padding: 0 30px 25px 60px;
-    border: 0;
-    background: rgba(14, 29, 52, 0.03);
-    border-radius: 5px;
-  }
-
-
- /*--------------------------------------------------------------
 # Estilos About Us
 --------------------------------------------------------------*/ 
 body{ 
-  text-align: center;
-  background-image:
-  url(/assets/img/fondo\ con\ \ opacidad.png);
-  background-size: 100%;
-  background-repeat: repeat;  
-  }
-  
-  #TITULO{
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-size: 30px;
-  font-family: 'Fraunces', serif;
-  color: #344E41;
-  }
-  
-  #Slogan{
-  margin-top: 50px;
-  margin-bottom: 50px;
-  font-size: 50px;
-  font-family: 'Fraunces', serif; 
-  color:#344E41;
-  }
-  
-  .cosechador{
-  size: 30px;
-  }
-  
-  .Tabla-intro{
-  background:#ffffeb;
-  color: black;
-  font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
-  display: inline-block;
-  border-radius: 15px;
-  }
-  
-  .Tabla-intro h4{
-  font-family:'Fraunces', serif;
-  color: #344E41;
-  }
-  
-  .Tabla-intro p{
-  margin-top: 30px;
-  margin-bottom: 30px;
-  }
-  
-  .img-fluid{
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: 0;
-  border-radius: 15px;
-  size: 400px;
-  }
-  
-  .img-fluid #cosechador{
-  size: 30px; 
-  }
-  
+text-align: center;
+background-image:
+url(/assets/img/fondo\ con\ \ opacidad.png);
+background-size: 100%;
+background-repeat: repeat;  
+}
+
+#TITULO-Aboutus{
+margin-top: 30px;
+margin-bottom: 30px;
+font-size: 30px;
+font-family: 'Fraunces', serif;
+color: #344E41;
+}
+
+#Slogan{
+margin-top: 50px;
+margin-bottom: 50px;
+font-size: 50px;
+font-family: 'Fraunces', serif; 
+color:#344E41;
+}
+
+.cosechador{
+size: 30px;
+}
+
+.Tabla-intro{
+background:#ffffeb;
+color: black;
+font-size: 16px;
+font-family: 'Montserrat', sans-serif;
+display: inline-block;
+border-radius: 15px;
+}
+
+.Tabla-intro h4{
+font-family:'Fraunces', serif;
+color: #344E41;
+}
+
+.Tabla-intro p{
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+.img-fluid{
+margin-top: 10px;
+margin-left: auto;
+margin-right: 0;
+border-radius: 15px;
+size: 400px;
+}
+
+.img-fluid #cosechador{
+size: 30px; 
+}
+
+
+
+#Valores{
+margin-top: 30px;
+margin-bottom: 30px;
+font-size: 30px;
+font-family: 'Fraunces', serif;
+color: #344E41;
+}
+
+
+.card {
+width: 450px;
+height: 400px;
+background: rgb(255, 255, 255);
+border-radius: 15px;
+box-shadow: 0.5em 0.5em 0.8em 0.5em #00000015;
+border: rgb(250, 250, 250) 0.2em solid;
+justify-content: center;
+margin-bottom: 30px;
+font-family: 'Montserrat', sans-serif; 
+font-size: 12px;
+}
+.card img {
+
+width: 350px;
+height: 210;
+margin-left: 40px;
+margin-top: 40px;
+border-radius: 15px;
+}
+
