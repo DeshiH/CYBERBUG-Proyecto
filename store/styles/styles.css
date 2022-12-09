@@ -176,3 +176,13 @@ color: black;
   padding-top: 0px;
   padding-bottom: 0px;
 }
+
+.precioAnterior{
+  color: #344E41;
+  text-decoration:line-through;
+}
+
+.carritoContador{
+  color: white;
+  font-family: 'Fraunces', serif;
+}

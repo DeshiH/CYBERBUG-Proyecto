@@ -5,13 +5,14 @@ var buttonMolido = document.querySelector("#botonMolido");
 var productoMolido = document.querySelector("#Molido1");
 var DOMcatalogo = document.querySelector('.listaProductos');
 var DOMitems = document.querySelector('#items');
+var carritoBadge = document.querySelector('#iconoCarrito');
 const baseDeDatos = [
         {
             id: 1,
             nombre: 'Yatzil Molido',
             precio: 149.99,
             precioPromo: 129.99,
-            promoStatus: true,
+            promoStatus: false,
             origen: 'Origen: Chiapas.',
             sabor: 'Sabor: Intenso-suave.',
             contenido: 'Contenido: 500g.',
@@ -35,7 +36,7 @@ const baseDeDatos = [
             nombre: 'Yaxkin Molido',
             precio: 149.99,
             precioPromo: 129.00,
-            promoStatus: true,
+            promoStatus: false,
             origen: 'Origen: Veracruz.',
             sabor: 'Sabor: Intenso-fuerte.',
             contenido: 'Contenido: 500g.',
@@ -83,7 +84,7 @@ const baseDeDatos = [
             nombre: 'Imox Grano',
             precio: 129.99,
             precioPromo: 99.99,
-            promoStatus: true,
+            promoStatus: false,
             origen: 'Origen: Tabasco.',
             sabor: 'Sabor: Intenso-medio.',
             contenido: 'Contenido: 500g.',
@@ -107,7 +108,7 @@ const baseDeDatos = [
             nombre: 'Amaité Grano',
             precio: 129.99,
             precioPromo: 99.99,
-            promoStatus: true,
+            promoStatus: false,
             origen: 'Origen: Tabasco.',
             sabor: 'Sabor: Suave, chocolate.',
             contenido: 'Contenido: 500g.',
@@ -125,6 +126,66 @@ const baseDeDatos = [
             contenido: 'Contenido: 500g.',
             categoria:'Grano',
             imagen: '/src/ixchelgranov.jpg'
+        },
+        {
+            id: 11,
+            nombre: 'Doblemente Intenso',
+            precio: 299.98,
+            precioPromo: 279.99,
+            promoStatus: true,
+            origen: 'Origen: Chiapas.',
+            sabor: 'Contiene 2 Yaxkin Molido de 500g cada uno.',
+            contenido: '',
+            categoria:'Paquete',
+            imagen: '/src/promo1.jpg'
+        },
+        {
+            id: 12,
+            nombre: 'Mujer Coffee Kode',
+            precio: 279.98,
+            precioPromo: 249.99,
+            promoStatus: true,
+            origen: 'Origen: Tabasco.',
+            sabor: 'Contiene 1 Ixchel Molido y 1 de Grano de 500g cada uno.                        ',
+            contenido: '',
+            categoria:'Paquete',
+            imagen: '/src/promo2.jpg'
+        },
+        {
+            id: 13,
+            nombre: 'Coffee Kode Plus',
+            precio: 389.97,
+            precioPromo: 349.99,
+            promoStatus: true,
+            origen: 'Origen: Veracruz.',
+            sabor: 'Contiene Amaité, Yatzil y Yaxkin de Grano de 500g.',
+            contenido: '',
+            categoria:'Paquete',
+            imagen: '/src/promo3.jpg'
+        },
+        {
+            id: 14,
+            nombre: 'Koffee Code Premium',
+            precio: 449.97,
+            precioPromo: 399.99,
+            promoStatus: true,
+            origen: 'Origen: Tabasco.',
+            sabor: 'Contiene Amaité, Yatzil y Yaxkin Molido de 500g.',
+            contenido: '',
+            categoria:'Paquete',
+            imagen: '/src/promo4.jpg'
+        },
+        {
+            id: 15,
+            nombre: 'Coffee Kode Ultimate',
+            precio: 649.95,
+            precioPromo: 549.99,
+            promoStatus: true,
+            origen: 'Origen: Chiapas.',
+            sabor: 'Contiene 5 bolsas de 500g de cada uno de nuestros Cafés de Grano.',
+            contenido: '',
+            categoria:'Paquete',
+            imagen: '/src/promo5.jpg'
         },
 ];
 
@@ -181,6 +242,7 @@ function mostrarMolido() {
             miNodoBoton.classList.add('storeButton1', 'agregar-carrito');
             miNodoBoton.textContent = 'AÑADIR +';
             miNodoBoton.setAttribute('data-id', producto.id);
+            miNodoBoton.addEventListener('click', agregarCarrito);
 
             // Insertamos
             DOMcatalogo.appendChild(miNodo);
@@ -255,6 +317,7 @@ function mostrarGrano(){
             miNodoBoton.classList.add('storeButton1', 'agregar-carrito');
             miNodoBoton.textContent = 'AÑADIR +';
             miNodoBoton.setAttribute('data-id', producto.id);
+            miNodoBoton.addEventListener('click', agregarCarrito);
 
             // Insertamos
             DOMcatalogo.appendChild(miNodo);
@@ -279,7 +342,7 @@ function mostrarGrano(){
 
 function mostrarPromociones(){
     categoriaMostrada.innerHTML = "PROMOCIONES";
-            DOMitems.removeChild(DOMcatalogo);
+        DOMitems.removeChild(DOMcatalogo);
         DOMcatalogo = document.createElement('div');
         DOMcatalogo.classList.add('row', 'row-cols-1', 'row-cols-sm-2', 'row-cols-md-3', 'row-cols-lg-4', 'g-4', 'listaProductos');
         DOMitems.appendChild(DOMcatalogo);
@@ -311,8 +374,9 @@ function mostrarPromociones(){
             let miNodoLista = document.createElement('ul');
             miNodoLista.classList.add('list-unstyled', 'mt-3', 'mb-4');
             // Items en lista de Card-Body
-            let miNodoListaOrigen = document.createElement('li');
-            miNodoListaOrigen.textContent = producto.origen;
+            let miNodoListaPrecioAnterior = document.createElement('li');
+            miNodoListaPrecioAnterior.textContent = producto.precio;
+            miNodoListaPrecioAnterior.classList.add('precioAnterior');
             let miNodoListaSabor = document.createElement('li');
             miNodoListaSabor.textContent = producto.sabor;
             let miNodoListaContenido = document.createElement('li');
@@ -322,12 +386,13 @@ function mostrarPromociones(){
             miNodoPrecio.classList.add('pricing-card-title', 'precio');
             miNodoPrecio.textContent = '$';
             let miNodoSpan = document.createElement('span');
-            miNodoSpan.textContent = producto.precio;
+            miNodoSpan.textContent = producto.precioPromo;
             // Boton 
             let miNodoBoton = document.createElement('button');
             miNodoBoton.classList.add('storeButton1', 'agregar-carrito');
             miNodoBoton.textContent = 'AÑADIR +';
             miNodoBoton.setAttribute('data-id', producto.id);
+            miNodoBoton.addEventListener('click', agregarCarrito);
 
             // Insertamos
             DOMcatalogo.appendChild(miNodo);
@@ -340,7 +405,7 @@ function mostrarPromociones(){
             miNodoCardBody.appendChild(miNodoLista);
             miNodoCardBody.appendChild(miNodoBoton);   
             miNodoPrecio.appendChild(miNodoSpan);
-            miNodoLista.appendChild(miNodoListaOrigen);
+            miNodoLista.appendChild(miNodoListaPrecioAnterior);
             miNodoLista.appendChild(miNodoListaSabor);
             miNodoLista.appendChild(miNodoListaContenido);
 
@@ -350,6 +415,20 @@ function mostrarPromociones(){
         
 }
 
+let badge = document.createElement('span');
+badge.classList.add('position-absolute', 'top-0', 'start-100', 'translate-middle', 'badge', 'rounded-pill', 'bg-danger', 'carritoContador');
+
+
+function agregarCarrito(){
+    carritoBadge.appendChild(badge);
+    carritoBadge.removeChild(badge);
+    badge = document.createElement('span');
+    badge.classList.add('position-absolute', 'top-0', 'start-100', 'translate-middle', 'badge', 'rounded-pill', 'bg-danger', 'carritoContador');
+    badge.textContent = contadorItems;
+    carritoBadge.appendChild(badge);
+    contadorItems++; 
+}
+var contadorItems = 1;
 mostrarMolido();
 
 buttonMolido.addEventListener("click", mostrarMolido);
