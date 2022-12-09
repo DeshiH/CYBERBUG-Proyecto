@@ -103,7 +103,7 @@
   }
   
   #body{
-    background-image: url(./assets/60porcientoopaco.png);
+    background-image: url(/assets/60porcientoopaco.png);
     background-color: rgb(249, 217, 177);/*#5b9d7d*/
     background-size: cover;
     background-repeat:repeat;

@@ -68,7 +68,7 @@
     </nav> 
     <!-- ===== End NavBar ===== -->
 
-    <!-- ===== Login ===== -->
+    <!-- ===== Tarjeta envio ===== -->
     <div class="container text-center" id="tarjeta">
         <div class="row justify-content-center g-0">
             <div class="col-12 col-sm-8 col-md-10 col-lg-10 pt-2 g-0 d-flex justify-content-center align-item-center" id="formulario">
@@ -114,9 +114,13 @@
                         </div>
                         <div class="col-md-4">
                           <label for="inputState" class="form-label">Estado</label>
-                          <select id="inputState" class="form-select">
+                          <select id="inputState" class="form-select"list="EstadosR">
+                            <datalist id="EstadosR">
                             <option selected>Selecciona...</option>
-                            <option>...</option>
+                            <option value="Ciudad de México">CDMX</option>
+                            <option value="Jalisco">Jalisco</option>
+                            <option value="Tabasco">Tabasco</option>
+                            </datalist>
                           </select>
                         </div>
                         <div class="col-md-2">
