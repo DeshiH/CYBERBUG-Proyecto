@@ -1,0 +1,62 @@
+/*--------------------------------------------------------------
+# NavBar
+--------------------------------------------------------------*/
+body{
+    background-image: url(/assets/img/patrón\ de\ imagen.png);
+    background-size:contain;
+    background-color: bisque;
+    background-repeat:initial;
+    background-position: center;
+    position:relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#navbarNav,.container-fluid{
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+    background-color: rgb(244, 213, 141);
+}
+
+.navbar{
+    padding: 0;
+}
+
+.search{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 5px;
+    height: 35px;
+}
+
+.search_button{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-bottom: 5px;
+    height: 35px;
+}
+
+a {
+    color: #A05C2D;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #A05C2D;
+    text-decoration: none;
+}
+
+.nav-link{
+    
+    color: #344E41;
+}
+
+.font-navbar{
+    font-family: 'Fraunces', serif;
+}
+
+.title{
+    color: rgb(160, 92, 45);
+    font-family: 'Fraunces', serif;
+    text-decoration: none;
+}

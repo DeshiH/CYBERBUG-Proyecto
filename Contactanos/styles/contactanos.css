@@ -140,3 +140,8 @@ footer {
     color: black;
 }
 /* ==== End Footer ====*/
+
+#boton_modal{
+    background-color:#344E41;
+    color: white;
+}
