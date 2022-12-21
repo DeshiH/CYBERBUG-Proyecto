@@ -22,16 +22,6 @@ function validarApellido(apellido) {
     }
 }
 
-/*
-    nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos
-    apellido: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos
-    password: /^.{4,12}$/,
-    correoElectrónico: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
-    day: 
-    month:
-    year:*/
-
-
 ///////////// FECHA DE NACIMIENTO //////////////
 
 /////* ==== Secuencia numérica en la etiqueta select de HTML ==== *//////
@@ -83,4 +73,38 @@ function validarApellido(apellido) {
 
     // Añadimos la opción al elemento select
     select.add(option);
+    }
+
+/////* ==== Validación con Regex ==== */////
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+    var passwordConfirm = document.getElementById('passwordConfirm').value;
+
+    function validarEmail(email) {
+        let regex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+        if (regex.test(email)) {
+            return true;
+        } else {
+            alert("Escriba correctamente su correo electrónico");
+            return false;
+        }
+    }
+
+    function validarPassword(password) {
+        var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8,}$/;
+        if (regex.test(password)) {
+            return true;
+        } else {
+            alert("La contraseña debe tener al menos 8 caracteres");
+            return false;
+        }
+    }
+
+    function validarConfirmPassword(password, passwordConfirm) {
+        if (password === passwordConfirm) {
+            return true;
+        } else {
+            alert("Las contraseñas no coinciden");
+            return false;
+        }
     }
