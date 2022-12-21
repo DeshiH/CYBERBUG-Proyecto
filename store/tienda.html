@@ -16,7 +16,7 @@
 </head>
 <body>
   <!-- Inicio de nav bar-->
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg" id = "navbarCK">
     <div class="container-fluid">
       <img class="rounded-circle" src="/src/Coffe Kode.png" width="60px" alt="" />
       <a class="title" href="/home.html">
@@ -73,62 +73,12 @@
             </a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2 search" type="search" placeholder="Escribe aquí" aria-label="Search" />
-          <button class="btn btn-outline-success search_button" type="submit">
-            Buscar
-          </button>
-        </form>
       </div>
     </div>
   </nav>
   <!-- Final de la navbar -->
-
-  <!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">Carrito de Compras</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-            <p id = "statusCarrito"> 
-              Tu carrito está vacío :(
-            </p>
-            <ul id="carrito" class="list-group">
-              <!-- Aqui se mostraran los articulos del carrito-->
-              <!-- <div class="row align-items-center">
-                <div class="col">
-                   One of three columns
-                </div>
-                <div class="col">
-                   One of three columns
-                </div>
-                <div class="col">
-                   One of three columns
-                </div>
-            </div> -->
-            </ul>
-            <hr>
-            <div class="row align-items-center">
-              <div class="col">
-                <p class="text-right">Artículos: <span id="totalArticulos"></span></p>
-              </div>
-              <div class="col">
-                <p class="text-right" id = "leyendaTotal">Total: $<span id="total"></span></p>
-              </div>
-            </div>
-      </div>
-      <div class="modal-footer">
-        <button id="vaciarButton" type="button" class="btn btn-secondary storeButton1">VACIAR CARRITO</button>
-        <button id="pagarButton" href="#" type="button" class="btn btn-primary storeButton1">PAGAR</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
+<br>
+<br>
   <!-- Banner -->
   <section id="banner">
     <br>
@@ -163,6 +113,42 @@
           </div>
     </div>
   </div>
+
+
+    <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Carrito de Compras</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+            <p id = "statusCarrito"> 
+              Tu carrito está vacío :(
+            </p>
+            <ul id="carrito" class="list-group">
+              <!-- Aqui se mostraran los articulos del carrito-->
+       
+            </ul>
+            <hr>
+            <div class="row align-items-center">
+              <div class="col">
+                <p class="text-right">Artículos: <span id="totalArticulos"></span></p>
+              </div>
+              <div class="col">
+                <p class="text-right" id = "leyendaTotal">Total: $<span id="total"></span></p>
+              </div>
+            </div>
+      </div>
+      <div class="modal-footer">
+        <button id="vaciarButton" type="button" class="btn btn-secondary storeButton1">VACIAR CARRITO</button>
+        <button id="pagarButton" href="#" type="button" class="btn btn-primary storeButton1">PAGAR</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <!-- Tarjetas de productos -->
   <div class="productsContainer">
