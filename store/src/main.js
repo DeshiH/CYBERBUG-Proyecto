@@ -11,6 +11,7 @@ var DOMtotal = document.querySelector('#total');
 var DOMtotalArticulos = document.querySelector('#totalArticulos');
 var DOMbotonVaciar = document.querySelector('#vaciarButton');
 var statusCarrito = document.querySelector('#statusCarrito');
+var botonPagar = document.querySelector('#pagarButton');
 var carrito = [];
 var divisa = '$';
 var contadorItems = 1;
@@ -577,6 +578,10 @@ function cargarCarritoDeLocalStorage () {
     }
 }
 
+function irAPagar(){
+    window.location.href="/Carritonew.html";
+}
+
 // 
 cargarCarritoDeLocalStorage();
 mostrarCarrito();
@@ -589,3 +594,4 @@ buttonMolido.addEventListener("click", mostrarMolido);
 buttonGrano.addEventListener("click", mostrarGrano);
 buttonPromociones.addEventListener("click", mostrarPromociones);
 DOMbotonVaciar.addEventListener('click', vaciarCarrito);
+botonPagar.addEventListener('click', irAPagar);
