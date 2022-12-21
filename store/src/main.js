@@ -581,6 +581,7 @@ function cargarCarritoDeLocalStorage () {
 cargarCarritoDeLocalStorage();
 mostrarCarrito();
 contadorCarrito();
+mostrarMolido();
 
 
 // EVENTOS DE BOTONES DE CATEGORIAS
