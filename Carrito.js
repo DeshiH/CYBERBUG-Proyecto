@@ -181,12 +181,16 @@ const baseDeDatos = [
         imagen: '/img/promo5.jpeg'
     },
 ];
-var carrito = [1,1,2,3,3];/**Carrito vacio */
+var miLocalStorage = window.localStorage;
+var carrito = [1, 2, 3];/**Carrito vacio */
 var resumencarrito = document.querySelector("#resumencarrito");
+var totalPago = document.querySelector ("#totalnet");
+var botonPagar = document.querySelector("#botonPagar");
 
 function mostrarResumenCarrito() {
-
-    // Quitamos los duplicados
+    // Vaciamos el HTML
+    resumencarrito.textContent = '';
+       // Quitamos los duplicados
     const carritoSinDuplicados = [...new Set(carrito)];
     // Generamos los Nodos a partir de carrito
     carritoSinDuplicados.forEach((item) => {
@@ -196,10 +200,11 @@ function mostrarResumenCarrito() {
         return itemBaseDatos.id === parseInt(item);
         });
         // Cuenta el número de veces que se repite el producto
-        const numeroUnidadesItem = carrito.reduce((total, itemId) => {
+        var numeroUnidadesItem = carrito.reduce((total, itemId) => {
             // ¿Coincide las id? Incremento el contador, en caso contrario no mantengo
             return itemId === item ? total += 1 : total;
         }, 0);
+
         // Creamos el nodo enlistar el producto en cuerpo del modal      
         const miDivprincipal = document.createElement('div');
         miDivprincipal.classList.add('container', 'text-center', 'p-2');
@@ -221,17 +226,21 @@ function mostrarResumenCarrito() {
         const botonMas = document.createElement ('button');
         botonMas.classList.add('btn', 'btn-primary', 'btn-sm', 'botonAumentar');
         botonMas.innerHTML = '+';
+        botonMas.setAttribute('data-item', miItem[0].id);
+        botonMas.addEventListener('click', añadirProductoAlCarrito);
         const spanPrecio = document.createElement('span');
         spanPrecio.innerHTML = `    ${numeroUnidadesItem}    `;
         const botonMenos = document.createElement ('button');
         botonMenos.classList.add('btn', 'btn-primary', 'btn-rs', 'botonDisminuir');
         botonMenos.innerHTML = '-';
+        botonMenos.setAttribute('data-item', miItem[0].id);
+        botonMenos.addEventListener('click', quitarProductoDelCarrito);
         const miDiv6 = document.createElement('div');
         miDiv6.classList.add('container');
         const miDiv7 = document.createElement('div');
         miDiv7.classList.add('col-2');
-        const subTotal = numeroUnidadesItem * miItem[0].precio;
-        miDiv7.textContent = subTotal;
+        const subTotal = (numeroUnidadesItem * miItem[0].precio).toFixed(2);
+        miDiv7.textContent = "$ " + subTotal;
         const mibr = document.createElement ('br');
         const mihr = document.createElement ('hr');
         // Mezclamos nodos
@@ -254,8 +263,67 @@ function mostrarResumenCarrito() {
 
        
     });
+
+    totalPago.textContent = "$ " + calcularTotal(); 
+    if (carrito.length <= 0){
+        var invitacion = document.createElement("img");
+        var invitacion2 = document.createElement("h4");
+        var invitacion3 = document.createElement("h4");
+        var invitacion4 = document.createElement("br");
+        invitacion.setAttribute("src", "/img/vacio.png");
+        invitacion.classList.add("img-fluid");
+        resumencarrito.appendChild(invitacion);
+        invitacion2.innerHTML = "Carrito Vacío";
+        invitacion3.innerHTML = "Visita nuestra tienda para agregar productos.";
+        resumencarrito.appendChild(invitacion2);
+        resumencarrito.appendChild(invitacion3);
+        resumencarrito.appendChild(invitacion4);
+        resumencarrito.appendChild(invitacion4);
+
+        botonPagar.innerHTML = "Visitar Tienda";
+        botonPagar.addEventListener("click", visitarTienda);
+       
+
+
+    }
+}
+  
+function calcularTotal() {
+    // Recorremos el array del carrito 
+    return carrito.reduce((total, item) => {
+        // De cada elemento obtenemos su precio
+        const miItem = baseDeDatos.filter((itemBaseDatos) => {
+            return itemBaseDatos.id === parseInt(item);
+        });
+        // Los sumamos al total
+        return total + miItem[0].precio;
+    }, 0).toFixed(2);
+}
+
+function añadirProductoAlCarrito(evento) {
+    // Añadimos el Nodo a nuestro carrito
+    carrito.push(parseInt (evento.target.getAttribute('data-item')));
+   
+    // Actualizamos el carrito 
+    mostrarResumenCarrito();
+    guardarCarritoEnLocalStorage();
    
 }
+
+function quitarProductoDelCarrito(evento) {
+    var productoAQuitar = carrito.findIndex(item => item === parseInt(evento.target.getAttribute('data-item')));
+     carrito.splice(productoAQuitar, 1);
+           
+    // Actualizamos el carrito 
+    mostrarResumenCarrito();
+    guardarCarritoEnLocalStorage();
+}
+
+function guardarCarritoEnLocalStorage () {
+    miLocalStorage.setItem('carrito', JSON.stringify(carrito));
+    console.log('Se guardó carrito en el local storage.');
+}
+
 
 /**Jala lo que ya existia en el carrito */
 function cargarCarritoDeLocalStorage () {
@@ -266,6 +334,25 @@ function cargarCarritoDeLocalStorage () {
         console.log('Se cargó carrito del local storage.');
     }
 }
+
+function vaciarCarrito() {
+    // Limpiamos los productos guardados
+    carrito = [];
+    // Renderizamos los cambios
+    mostrarResumenCarrito();
+    localStorage.clear();
+    console.log('Se eliminó carrito del local storage.');
+}
+
+function visitarTienda(){
+    window.location.href="aqui va el URL de la tienda";
+}
+
+// funciones que se disparan al correr la pagina
+
+cargarCarritoDeLocalStorage();
+mostrarResumenCarrito();
+
 
 /* Dando funcionalidad a mis botones de aumentar y diminuir porductos para sumar y restar la cant de productos seleccionados */
 //Declaro variables para que se modifiquen en mi front, linkeadas por id a mi HTML
@@ -353,7 +440,7 @@ function Disminuir3(){
 
 botonDisminuir3.addEventListener("click", Disminuir3);*/
 /* Terminan mis terceros botones*/
-mostrarResumenCarrito();
+
 
 /* Agregar función para que se modifique el sub-total y el total de la cuenta al dar click en botones suma y disminuir */
 
