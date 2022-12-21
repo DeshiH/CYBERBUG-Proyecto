@@ -1,0 +1,275 @@
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+#header {
+    font-family: 'Fraunces', serif;
+    color: #444444;
+  }
+  
+  a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #5faee3;
+    text-decoration: none;
+  }
+  
+  /*Paleta de colores
+  #344E41
+  #A05C2D
+  #F4D58D
+  #
+   */
+  
+  /**{
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Fraunces', serif;
+  }*/
+  
+  /*--------------------------------------------------------------
+  # NavBar
+  --------------------------------------------------------------*/
+  body{
+    background-image: url(/assets/img/patron.png);
+    background-size:contain;
+    background-color: bisque;
+    background-repeat:initial;
+    background-position: center;
+    position:relative;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+#navbarNav,.container-fluid{
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+    background-color: rgb(244, 213, 141);
+
+}
+
+.navbar{
+   
+   padding: 0;
+  
+}
+
+
+
+.search{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 5px;
+  height: 35px;
+}
+
+.search_button{
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-bottom: 5px;
+  height: 35px;
+}
+
+a {
+  color: #A05C2D;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #A05C2D;
+  text-decoration: none;
+}
+
+.nav-link{
+    
+    color: #344E41;
+}
+
+.font-navbar{
+  font-family: 'Fraunces', serif;
+}
+
+.title{
+    color: rgb(160, 92, 45);
+    font-family: 'Fraunces', serif;
+    text-decoration: none;
+    
+}
+  #body{
+    background-image: url(/assets/img/patron.png);
+    background-color: #f5ead1;
+    background-size: cover;
+    background-repeat:repeat;
+    background-position: center;
+    position:relative;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  
+ 
+#encabezado{
+  font-family: 'Fraunces', serif;
+}
+
+#tarjeta{
+  margin-top: 0px;
+}
+
+#formulario{
+  padding: 30px;
+}
+
+#card{
+  background-color:white;
+  -webkit-box-shadow: 1px 2px 16px 0px #000000; 
+  box-shadow: 1px 2px 16px 0px #000000;
+
+}
+/*
+#login-icon, #password-icon{
+  background-color:bisque;
+}*/
+
+.prueba_inputs{
+  text-align: left;
+}
+#logo{
+  align-items: center;
+}
+
+#iniciarSesion{
+  color:ghostwhite;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#cuenta, #registrate{
+  font-size: 12px;
+}
+
+#email_label, #password_label{
+  font-size: 16px;
+}
+
+.is-required:after {
+  content: '*';
+  margin-left: 3px;
+  color:red;
+  font-weight:lighter;
+}
+
+#recordarme{
+  font-size: 12px;
+}
+
+#google{
+  font-size: 14px;
+} 
+
+#emailPlaceholder , #passwordPlaceholder{
+  font-size: 14px;
+}
+
+
+/********BOTÓN INTERACTIVO LOGIN****/
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #dd9969;
+  /*background: #DDBEA9;*/
+  border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  /*font-family: 'Fraunces', serif;*/
+  font-weight:bold;
+  font-size: 16px;
+}
+
+button:hover .circle {
+  width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+  color: #fff;
+}
+
+
+footer{
+  padding: 20px;
+   margin-top: 100px;
+  background-color: rgb(244, 213, 141);
+}
