@@ -67,12 +67,12 @@ formulario.inputNumero.addEventListener('keyup', (e) => {
 	if(valorInput[0] == 4){
 		logoMarca.innerHTML = '';
 		const imagen = document.createElement('img');
-		imagen.src = '../../assets/img/visa.png';
+		imagen.src = '../img/visa.png';
 		logoMarca.appendChild(imagen);
 	} else if(valorInput[0] == 5){
 		logoMarca.innerHTML = '';
 		const imagen = document.createElement('img');
-		imagen.src = '../../assets/img/mastercard.png';
+		imagen.src = '../img/mastercard.png';
 		logoMarca.appendChild(imagen);
 	}
 
