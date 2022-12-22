@@ -10,7 +10,7 @@ const baseDeDatos = [
         sabor: 'Sabor: Intenso-suave.',
         contenido: 'Contenido: 500g.',
         categoria:'Molido',
-        imagen: '../img/Yatzil-molido.jpg'
+        imagen: './img/Yatzil-molido.jpg'
     },
     {
         id: 2,
@@ -22,7 +22,7 @@ const baseDeDatos = [
         sabor: 'Sabor: Intenso-medio.',
         contenido: 'Contenido: 500g.',
         categoria:'Molido',
-        imagen: '../img/Imox-molido.jpg'
+        imagen: './img/Imox-molido.jpg'
     },
     {
         id: 3,
@@ -34,7 +34,7 @@ const baseDeDatos = [
         sabor: 'Sabor: Intenso-fuerte.',
         contenido: 'Contenido: 500g.',
         categoria:'Molido',
-        imagen: '../img/Yaxkin-molido.jpg'
+        imagen: './img/Yaxkin-molido.jpg'
     },
     {
         id: 4,
@@ -46,7 +46,7 @@ const baseDeDatos = [
         sabor: 'Sabor: Suave, chocolate.',
         contenido: 'Contenido: 500g.',
         categoria:'Molido',
-        imagen: '../img/Amaite-molido.jpg'
+        imagen: './img/Amaite-molido.jpg'
     },
     {
         id: 5,
@@ -58,7 +58,7 @@ const baseDeDatos = [
         sabor: 'Sabor: Suave, afrutado.',
         contenido: 'Contenido: 500g.',
         categoria:'Molido',
-        imagen: '../img/Ixchel-molido.jpg'
+        imagen: './img/Ixchel-molido.jpg'
     },
     {
         id: 6,
@@ -70,7 +70,7 @@ const baseDeDatos = [
         sabor: 'Sabor: Intenso-suave.',
         contenido: 'Contenido: 500g.',
         categoria:'Grano',
-        imagen: '../img/Yaxkin-grano.jpg'
+        imagen: './img/Yaxkin-grano.jpg'
     },
     {
         id: 7,
@@ -82,7 +82,7 @@ const baseDeDatos = [
         sabor: 'Sabor: Intenso-medio.',
         contenido: 'Contenido: 500g.',
         categoria:'Grano',
-        imagen: '../img/Imox-grano.jpg'
+        imagen: './img/Imox-grano.jpg'
     },
     {
         id: 8,
@@ -94,7 +94,7 @@ const baseDeDatos = [
         sabor: 'Sabor: Intenso-fuerte.',
         contenido: 'Contenido: 500g.',
         categoria:'Grano',
-        imagen: '../img/yatzilgranov.jpg'
+        imagen: './img/yatzilgranov.jpg'
     },
     {
         id: 9,
@@ -106,7 +106,7 @@ const baseDeDatos = [
         sabor: 'Sabor: Suave, chocolate.',
         contenido: 'Contenido: 500g.',
         categoria:'Grano',
-        imagen: '../img/Amaite-grano.jpg'
+        imagen: './img/Amaite-grano.jpg'
     },
     {
         id: 10,
@@ -118,7 +118,7 @@ const baseDeDatos = [
         sabor: 'Sabor: Suave, afrutado.',
         contenido: 'Contenido: 500g.',
         categoria:'Grano',
-        imagen: '../img/Ixchelgranov.jpg'
+        imagen: './img/Ixchelgranov.jpg'
     },
     {
         id: 11,
@@ -130,7 +130,7 @@ const baseDeDatos = [
         descripcion: 'Contiene 2 Yaxkin Molido de 500g cada uno.',
         contenido: '',
         categoria:'Paquete',
-        imagen: '../img/promo1.jpg'
+        imagen: './img/promo1.jpg'
     },
     {
         id: 12,
@@ -142,7 +142,7 @@ const baseDeDatos = [
         descripcion: 'Contiene 1 Ixchel Molido y 1 de Grano de 500g cada uno.                        ',
         contenido: '',
         categoria:'Paquete',
-        imagen: '../img/promo2.jpg'
+        imagen: './img/promo2.jpg'
     },
     {
         id: 13,
@@ -154,7 +154,7 @@ const baseDeDatos = [
         descripcion: 'Contiene Amaité, Yatzil y Yaxkin de Grano de 500g.',
         contenido: '',
         categoria:'Paquete',
-        imagen: '../img/promo3.jpg'
+        imagen: './img/promo3.jpg'
     },
     {
         id: 14,
@@ -166,7 +166,7 @@ const baseDeDatos = [
         descripcion:'Contiene Amaité, Yatzil y Yaxkin Molido de 500g.',
         contenido: '',
         categoria:'Paquete',
-        imagen: '../img/promo4.jpg'
+        imagen: './img/promo4.jpg'
     },
     {
         id: 15,
@@ -178,7 +178,7 @@ const baseDeDatos = [
         descripcion: 'Contiene 5 bolsas de 500g de cada uno de nuestros Cafés de Grano.',
         contenido: '',
         categoria:'Paquete',
-        imagen: '../img/promo5.jpg'
+        imagen: './img/promo5.jpg'
     },
 ];
 var miLocalStorage = window.localStorage;
@@ -270,7 +270,7 @@ function mostrarResumenCarrito() {
         var invitacion2 = document.createElement("h4");
         var invitacion3 = document.createElement("h4");
         var invitacion4 = document.createElement("br");
-        invitacion.setAttribute("src", "/assets/img/vacio.png");
+        invitacion.setAttribute("src", "./img/vacio.png");
         invitacion.classList.add("img-fluid");
         resumencarrito.appendChild(invitacion);
         invitacion2.innerHTML = "Carrito Vacío";
@@ -345,7 +345,7 @@ function vaciarCarrito() {
 }
 
 function visitarTienda(){
-    window.location.href="/html/Tienda.html";
+    window.location.href="../../html/Tienda.html";
 }
 
 // funciones que se disparan al correr la pagina
