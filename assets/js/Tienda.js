@@ -594,4 +594,4 @@ buttonMolido.addEventListener("click", mostrarMolido);
 buttonGrano.addEventListener("click", mostrarGrano);
 buttonPromociones.addEventListener("click", mostrarPromociones);
 DOMbotonVaciar.addEventListener('click', vaciarCarrito);
-botonPagar.addEventListener('click', irAPagar);
+// botonPagar.addEventListener('click', irAPagar);
