@@ -30,7 +30,7 @@ const baseDeDatos = [
             sabor: 'Sabor: Intenso-suave.',
             contenido: 'Contenido: 500g.',
             categoria:'Molido',
-            imagen: '../assets/img/yatzilmolidov.jpg'
+            imagen: '../../assets/img/yatzilmolidov.jpg'
         },
         {
             id: 2,
@@ -42,7 +42,7 @@ const baseDeDatos = [
             sabor: 'Sabor: Intenso-medio.',
             contenido: 'Contenido: 500g.',
             categoria:'Molido',
-            imagen: '../assets/img/imoxmolidov.jpg'
+            imagen: '../../assets/img/imoxmolidov.jpg'
         },
         {
             id: 3,
@@ -66,7 +66,7 @@ const baseDeDatos = [
             sabor: 'Sabor: Suave, chocolate.',
             contenido: 'Contenido: 500g.',
             categoria:'Molido',
-            imagen: '../assets/img/amaitemolido.jpg'
+            imagen: '../../assets/img/amaitemolido.jpg'
         },
         {
             id: 5,
@@ -78,7 +78,7 @@ const baseDeDatos = [
             sabor: 'Sabor: Suave, afrutado.',
             contenido: 'Contenido: 500g.',
             categoria:'Molido',
-            imagen: '../assets/img/ixchelmolidov.jpg'
+            imagen: '../../assets/img/ixchelmolidov.jpg'
         },
         {
             id: 6,
@@ -90,7 +90,7 @@ const baseDeDatos = [
             sabor: 'Sabor: Intenso-suave.',
             contenido: 'Contenido: 500g.',
             categoria:'Grano',
-            imagen: '../assets/img/yatzilgranov.jpg'
+            imagen: '../../assets/img/yatzilgranov.jpg'
         },
         {
             id: 7,
@@ -102,7 +102,7 @@ const baseDeDatos = [
             sabor: 'Sabor: Intenso-medio.',
             contenido: 'Contenido: 500g.',
             categoria:'Grano',
-            imagen: '../assets/img/imoxgranov.jpg'
+            imagen: '../../assets/img/imoxgranov.jpg'
         },
         {
             id: 8,
@@ -114,7 +114,7 @@ const baseDeDatos = [
             sabor: 'Sabor: Intenso-fuerte.',
             contenido: 'Contenido: 500g.',
             categoria:'Grano',
-            imagen: '../assets/img/yaxkingranov.jpg'
+            imagen: '../../assets/img/yaxkingranov.jpg'
         },
         {
             id: 9,
@@ -126,7 +126,7 @@ const baseDeDatos = [
             sabor: 'Sabor: Suave, chocolate.',
             contenido: 'Contenido: 500g.',
             categoria:'Grano',
-            imagen: '../assets/img/amaitegranov.jpg'
+            imagen: '../../assets/img/amaitegranov.jpg'
         },
         {
             id: 10,
@@ -139,7 +139,7 @@ const baseDeDatos = [
             descripcion: '',
             contenido: 'Contenido: 500g.',
             categoria:'Grano',
-            imagen: '../assets/img/ixchelgranov.jpg'
+            imagen: '../../assets/img/ixchelgranov.jpg'
         },
         {
             id: 11,
@@ -152,7 +152,7 @@ const baseDeDatos = [
             descripcion: 'Contiene 2 Yaxkin Molido de 500g cada uno.',
             contenido: '',
             categoria:'Paquete',
-            imagen: '../assets/img/promo1.jpg'
+            imagen: '../../assets/img/promo1.jpg'
         },
         {
             id: 12,
@@ -165,7 +165,7 @@ const baseDeDatos = [
             descripcion: 'Contiene 1 Ixchel Molido y 1 de Grano de 500g cada uno.                        ',
             contenido: '',
             categoria:'Paquete',
-            imagen: '../assets/img/promo2.jpg'
+            imagen: '../../assets/img/promo2.jpg'
         },
         {
             id: 13,
@@ -178,7 +178,7 @@ const baseDeDatos = [
             descripcion: 'Contiene Amaité, Yatzil y Yaxkin de Grano de 500g.',
             contenido: '',
             categoria:'Paquete',
-            imagen: '../assets/img/promo3.jpg'
+            imagen: '../../assets/img/promo3.jpg'
         },
         {
             id: 14,
@@ -191,7 +191,7 @@ const baseDeDatos = [
             descripcion:'Contiene Amaité, Yatzil y Yaxkin Molido de 500g.',
             contenido: '',
             categoria:'Paquete',
-            imagen: '../assets/img/promo4.jpg'
+            imagen: '../../assets/img/promo4.jpg'
         },
         {
             id: 15,
@@ -204,7 +204,7 @@ const baseDeDatos = [
             descripcion: 'Contiene 5 bolsas de 500g de cada uno de nuestros Cafés de Grano.',
             contenido: '',
             categoria:'Paquete',
-            imagen: '../assets/img/promo5.jpg'
+            imagen: '../../assets/img/promo5.jpg'
         },
 ];
 
