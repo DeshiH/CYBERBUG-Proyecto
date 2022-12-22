@@ -1,0 +1,195 @@
+body{
+    background-image: url(/assets/img/patron.png);
+    background-size:contain;
+    background-color: bisque;
+    background-repeat:initial;
+    background-position: center;
+    position:relative;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+#navbarNav,.container-fluid{
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+    background-color: rgb(244, 213, 141);
+
+}
+
+.navbar{
+   
+   padding: 0;
+  
+}
+
+
+
+.search{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 5px;
+  height: 35px;
+}
+
+.search_button{
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-bottom: 5px;
+  height: 35px;
+}
+
+a {
+  color: #A05C2D;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #A05C2D;
+  text-decoration: none;
+}
+
+.nav-link{
+    
+    color: #344E41;
+}
+
+.font-navbar{
+  font-family: 'Fraunces', serif;
+}
+
+.title{
+    color: rgb(160, 92, 45);
+    font-family: 'Fraunces', serif;
+    text-decoration: none;
+    
+}
+
+h2{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+    padding: 20px;
+     margin-top: 100px;
+    background-color: rgb(244, 213, 141);
+}
+
+
+
+
+
+
+/* PARTE DE LAS CARDS CON SLIDER */
+
+
+.container{
+  max-width: 950px;
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 0;
+}
+.container .main-card{
+  display: flex;
+  justify-content: space-evenly;
+  width: 200%;
+  transition: 1s;
+}
+#two:checked  ~ .main-card, #four:checked ~ .main-card, #six:checked  ~ .main-card{
+  margin-left: -100%;
+}
+.container .main-card .cards{
+  width: calc(100% / 2 - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px;
+  justify-content: space-between;
+}
+
+
+
+.main-card .cards .card{
+  
+
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+  background-color: rgb(228, 228, 228);
+}
+
+
+
+.fondo{
+  background: #344E41;
+  background: -moz-linear-gradient(left, #344E41 0%, #456856 50%, #344E41 100%);
+  background: -webkit-linear-gradient(left, #344E41 0%, #456856 50%, #344E41 100%);
+  background: linear-gradient(to right, #344E41 0%, #456856 50%, #344E41 100%);
+   
+  
+
+}
+
+
+/* KITS DE CUMPLEANOS */
+
+.kits-cumpleaños{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  gap: 20px;
+  
+  
+  }
+  
+  
+  
+  .card-title{
+    text-align: center;
+  }
+  
+
+
+.card-kit{
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  background-color: rgb(228, 228, 228);
+}
+
+.btn-kits{
+  color:rgb(52, 78, 65);
+  display: flex;
+  align-items: center;
+  
+  justify-content: center;
+background-color: rgb(244, 213, 141);
+
+
+}
+
+
+.btn-kits::before{
+  background-color: rgb(244, 213, 141);
+}
+
+
+
+.person{
+  color: black;
+}
+
+

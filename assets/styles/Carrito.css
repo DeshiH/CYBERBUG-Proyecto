@@ -1,0 +1,203 @@
+body{
+   background-image: url(/assets/img/patron.png);
+   background-size:contain;
+   background-color: bisque;
+   background-repeat:initial;
+   background-position: center;
+   position:relative;
+   font-family: 'Montserrat', sans-serif;
+
+}
+
+
+#navbarNav,.container-fluid{
+   justify-content: center;
+   align-items: center;
+   text-align: end;
+   background-color: rgb(244, 213, 141);
+
+}
+
+.navbar{
+  
+  padding: 0;
+ 
+}
+
+
+
+.search{
+ padding-top: 8px;
+ padding-bottom: 8px;
+ margin-bottom: 5px;
+ height: 35px;
+}
+
+.search_button{
+ padding-top: 4px;
+ padding-bottom: 4px;
+ margin-bottom: 5px;
+ height: 35px;
+}
+
+a {
+ color: #A05C2D;
+ text-decoration: none;
+}
+
+a:hover {
+ color: #A05C2D;
+ text-decoration: none;
+}
+
+.nav-link{
+   
+   color: #344E41;
+}
+
+.font-navbar{
+ font-family: 'Fraunces', serif;
+}
+
+.title{
+   color: rgb(160, 92, 45);
+   font-family: 'Fraunces', serif;
+   text-decoration: none;
+   
+}
+ 
+ 
+ 
+ 
+
+footer{
+   padding: 20px;
+    margin-top: 100px;
+   background-color: rgb(244, 213, 141);
+}
+
+
+/* alineacion div padre e imgs*/
+.padre {
+   background-color: #ffffeb;
+   font-family: 'Montserrat';
+   font-size: 16px;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   border-radius: 15px;
+   
+   }
+   .img{
+      margin-bottom: 10%;
+   }
+   
+   /*Hace responsive la el grid padre*/
+   .container-fluid{
+      width: 100%;
+   }
+   /*Personalización de boton */
+   
+   .pay_button{
+   background-color: #F4D58D;
+   border-color: #344E41;  
+   padding-top: 4px;
+   padding-bottom: 4px;
+   margin-bottom: 5px;
+   height: 35px;
+   width:50%;
+   margin-left:25%;
+   margin-right:25%;
+   text-emphasis-color: black;
+   text-decoration-color: black;
+   }
+   
+   
+   
+   .btn-primary{
+   background-color: #344E41;
+   border-color: #A05C2D;
+   width: 30px;
+   height: 30px;   
+   padding-top: 4px;
+   padding-bottom: 4px;
+   margin-bottom: 5px;
+   
+   }
+   
+   .btn-add{
+      background-color: #F4D58D;
+      border-color: #344E41;
+      width: 80px;
+      height: 40px;   
+      padding-top: 4px;
+      padding-bottom: 4px;
+      font-family: 'Montserrat';
+      font-size: small;
+      }
+   
+   
+   /* PARTE DE LAS CARDS CON SLIDER CARRUSEL*/
+   
+   .tittle{
+      background-color: #ffffeb;
+      font-family: 'Fraunces', serif;
+   }
+   
+   .container{
+      max-width: 950px;
+      width: 100%;
+      overflow: hidden;
+      padding: 10px 0;
+   
+    }
+    .container .main-card{
+      display: flex;
+      justify-content: center;
+      width: 200%;
+      transition: 1s;
+      text-align: justify;
+    }
+    #two:checked  ~ .main-card, #four:checked ~ .main-card, #six:checked  ~ .main-card{
+      margin-left: -100%;
+    }
+    .container .main-card .cards{
+      width: calc(100% / 2 - 10px);
+      display: flex;
+      flex-wrap: wrap;
+      margin: 40px;
+      justify-content: space-between;
+      text-align: justify;
+    }
+    .main-card .cards .card{
+      
+    
+      border-radius: 12px;
+      padding: 10px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+      transition: all 0.4s ease;
+      text-align: justify;
+    }
+    .carousel {
+      /* Other styles for the slide */
+    
+      /* Add a transition to smoothly animate the slide */
+      transition: all 0.5s ease-in-out;
+    }
+   
+   /* alineacion responsive*/
+   
+   .user{
+      float: inline-end;
+   }
+    
+   #resumencarrito img{
+      border-radius: 6px;
+   
+   }
+   
+   #resumencarrito {
+      text-align: center;
+      align-items: center;
+      justify-items: center;  
+   }
