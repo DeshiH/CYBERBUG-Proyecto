@@ -578,9 +578,9 @@ function cargarCarritoDeLocalStorage () {
     }
 }
 
-function irAPagar(){
-    window.location.href="../../html/Carrito1.html";
-}
+// function irAPagar(){
+//     window.location.href="../../html/Carrito1.html";
+// }
 
 // 
 cargarCarritoDeLocalStorage();
