@@ -54,7 +54,7 @@ const baseDeDatos = [
             sabor: 'Sabor: Intenso-fuerte.',
             contenido: 'Contenido: 500g.',
             categoria:'Molido',
-            imagen: '../assets/img/yaxkinmolidov.jpg'
+            imagen: '../../assets/img/yaxkinmolidov.jpg'
         },
         {
             id: 4,
