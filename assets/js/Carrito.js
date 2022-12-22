@@ -270,7 +270,7 @@ function mostrarResumenCarrito() {
         var invitacion2 = document.createElement("h4");
         var invitacion3 = document.createElement("h4");
         var invitacion4 = document.createElement("br");
-        invitacion.setAttribute("src", "./img/vacio.png");
+        invitacion.setAttribute("src", "../assets/img/vacio.png");
         invitacion.classList.add("img-fluid");
         resumencarrito.appendChild(invitacion);
         invitacion2.innerHTML = "Carrito Vacío";

@@ -12,7 +12,7 @@
 }*/
 
 body{
-    background-image: url(/assets/img/patron.png);
+    background-image: url(../../assets/img/patron.png);
     background-size:contain;
     background-color: #f8f4ea;
     background-repeat:initial;

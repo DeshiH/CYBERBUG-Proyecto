@@ -92,7 +92,7 @@ a:hover {
 }
   
   body{
-    background-image: url(/assets/img/patron.png);
+    background-image: url(../../assets/img/patron.png);
     background-color: #f5ead1;
     background-size: cover;
     background-repeat:repeat;

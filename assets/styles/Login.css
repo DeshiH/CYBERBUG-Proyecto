@@ -33,7 +33,7 @@
   # NavBar
   --------------------------------------------------------------*/
   body{
-    background-image: url(/assets/img/patron.png);
+    background-image: url(../../assets/img/patron.png);
     background-size:contain;
     background-color: bisque;
     background-repeat:initial;

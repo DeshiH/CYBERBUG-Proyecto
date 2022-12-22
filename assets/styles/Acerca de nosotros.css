@@ -1,7 +1,7 @@
 /* Estilos Generales */
 body{
     background-image: 
-    url(/assets/img/patron.png);
+    url(../../assets/img/patron.png);
     background-size: 100%;
     background-repeat: repeat;   
   }
