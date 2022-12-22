@@ -66,7 +66,7 @@ const baseDeDatos = [
             sabor: 'Sabor: Suave, chocolate.',
             contenido: 'Contenido: 500g.',
             categoria:'Molido',
-            imagen: '../assets/img/Amaite-molido.jpg'
+            imagen: '../assets/img/Amaite-molido2.jpg'
         },
         {
             id: 5,
@@ -139,7 +139,7 @@ const baseDeDatos = [
             descripcion: '',
             contenido: 'Contenido: 500g.',
             categoria:'Grano',
-            imagen: '../assets/img/ixchelgranov.jpg'
+            imagen: '../assets/img/Ixchel-grano.jpg'
         },
         {
             id: 11,
