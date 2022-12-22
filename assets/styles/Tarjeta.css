@@ -118,7 +118,7 @@ a:hover {
 
 .tarjeta .delantera {
 	width: 100%;
-	background: url(/assets/img/tarjeta.png);
+	background: url(../../assets/img/tarjeta.png);
 	background-size: cover;
 }
 
