@@ -99,7 +99,8 @@ footer{
    /*Personalización de boton */
    
    .pay_button{
-   background-color: #F4D58D;   
+   background-color: #F4D58D;
+   border-color: #344E41;  
    padding-top: 4px;
    padding-bottom: 4px;
    margin-bottom: 5px;
@@ -107,6 +108,8 @@ footer{
    width:50%;
    margin-left:25%;
    margin-right:25%;
+   text-emphasis-color: black;
+   text-decoration-color: black;
    }
    
    
@@ -130,7 +133,7 @@ footer{
       padding-top: 4px;
       padding-bottom: 4px;
       font-family: 'Montserrat';
-      
+      font-size: small;
       }
    
    
@@ -186,4 +189,15 @@ footer{
    
    .user{
       float: inline-end;
+   }
+    
+   #resumencarrito img{
+      border-radius: 6px;
+   
+   }
+   
+   #resumencarrito {
+      text-align: center;
+      align-items: center;
+      justify-items: center;  
    }

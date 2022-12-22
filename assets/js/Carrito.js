@@ -357,58 +357,58 @@ mostrarResumenCarrito();
 /* Dando funcionalidad a mis botones de aumentar y diminuir porductos para sumar y restar la cant de productos seleccionados */
 //Declaro variables para que se modifiquen en mi front, linkeadas por id a mi HTML
 
-var botonAumentar = document.querySelector("#Aumentar");
-var botonDisminuir = document.querySelector("#Disminuir");
-var cantProductos1 = document.querySelector("#productos1");
-var valorproductos1 = 3;
-function Aumentar1(){
-    valorproductos1++; //La cantidad de productos aumenta de 1 en 1
-    cantProductos1.innerHTML = valorproductos1;  //Con innerHTML pongo el valor de los productos en el front  
-    botonDisminuir.disabled = valorproductos1 == 0 ? true : false;
-}
-botonAumentar.addEventListener("click", Aumentar1);
-function Disminuir1(){
-    valorproductos1--;
-    cantProductos1.innerHTML = valorproductos1;
-    botonDisminuir.disabled = valorproductos1 == 0 ? true : false;
-}
-botonDisminuir.addEventListener("click", Disminuir1);
+// var botonAumentar = document.querySelector("#Aumentar");
+// var botonDisminuir = document.querySelector("#Disminuir");
+// var cantProductos1 = document.querySelector("#productos1");
+// var valorproductos1 = 3;
+// function Aumentar1(){
+//     valorproductos1++; //La cantidad de productos aumenta de 1 en 1
+//     cantProductos1.innerHTML = valorproductos1;  //Con innerHTML pongo el valor de los productos en el front  
+//     botonDisminuir.disabled = valorproductos1 == 0 ? true : false;
+// }
+// botonAumentar.addEventListener("click", Aumentar1);
+// function Disminuir1(){
+//     valorproductos1--;
+//     cantProductos1.innerHTML = valorproductos1;
+//     botonDisminuir.disabled = valorproductos1 == 0 ? true : false;
+// }
+// botonDisminuir.addEventListener("click", Disminuir1);
  
-var botonAumentar2 = document.querySelector("#Aumentar2");
-var botonDisminuir2 = document.querySelector("#Disminuir2");
-var cantProductos2 = document.querySelector("#productos2");
-var valorproductos2 = 3;
-function Aumentar2(){
-    valorproductos2++; //La cantidad de productos aumenta de 1 en 1
-    cantProductos2.innerHTML = valorproductos2;  //Con innerHTML pongo el valor de los productos en el front  
-    botonDisminuir2.disabled = valorproductos2 == 0 ? true : false;
-}
-botonAumentar2.addEventListener("click", Aumentar2);
-function Disminuir2(){
-    valorproductos2--;
-    cantProductos2.innerHTML = valorproductos2;
-    botonDisminuir2.disabled = valorproductos2 == 0 ? true : false;
-}
-botonDisminuir2.addEventListener("click", Disminuir2);
+// var botonAumentar2 = document.querySelector("#Aumentar2");
+// var botonDisminuir2 = document.querySelector("#Disminuir2");
+// var cantProductos2 = document.querySelector("#productos2");
+// var valorproductos2 = 3;
+// function Aumentar2(){
+//     valorproductos2++; //La cantidad de productos aumenta de 1 en 1
+//     cantProductos2.innerHTML = valorproductos2;  //Con innerHTML pongo el valor de los productos en el front  
+//     botonDisminuir2.disabled = valorproductos2 == 0 ? true : false;
+// }
+// botonAumentar2.addEventListener("click", Aumentar2);
+// function Disminuir2(){
+//     valorproductos2--;
+//     cantProductos2.innerHTML = valorproductos2;
+//     botonDisminuir2.disabled = valorproductos2 == 0 ? true : false;
+// }
+// botonDisminuir2.addEventListener("click", Disminuir2);
 
-var botonAumentar3 = document.querySelector("#Aumentar3");
-var botonDisminuir3 = document.querySelector("#Disminuir3");
-var cantProductos3 = document.querySelector("#productos3");
-var valorproductos3 = 3;
-function Aumentar3(){
-    valorproductos3++; //La cantidad de productos aumenta de 1 en 1
-    cantProductos3.innerHTML = valorproductos3;  //Con innerHTML pongo el valor de los productos en el front 
+// var botonAumentar3 = document.querySelector("#Aumentar3");
+// var botonDisminuir3 = document.querySelector("#Disminuir3");
+// var cantProductos3 = document.querySelector("#productos3");
+// var valorproductos3 = 3;
+// function Aumentar3(){
+//     valorproductos3++; //La cantidad de productos aumenta de 1 en 1
+//     cantProductos3.innerHTML = valorproductos3;  //Con innerHTML pongo el valor de los productos en el front 
     
-    botonDisminuir3.disabled = valorproductos3 == 0 ? true : false;
+//     botonDisminuir3.disabled = valorproductos3 == 0 ? true : false;
    
-}
-botonAumentar3.addEventListener("click", Aumentar3);
-function Disminuir3(){
-    valorproductos3--;
-    cantProductos3.innerHTML = valorproductos3;
-    botonDisminuir3.disabled = valorproductos3 == 0 ? true : false;
-}
-botonDisminuir3.addEventListener("click", Disminuir3);
+// }
+// botonAumentar3.addEventListener("click", Aumentar3);
+// function Disminuir3(){
+//     valorproductos3--;
+//     cantProductos3.innerHTML = valorproductos3;
+//     botonDisminuir3.disabled = valorproductos3 == 0 ? true : false;
+// }
+// botonDisminuir3.addEventListener("click", Disminuir3);
 /* Terminan mis terceros botones*/
 
 

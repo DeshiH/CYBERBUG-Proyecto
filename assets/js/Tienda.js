@@ -457,7 +457,7 @@ function contadorCarrito(){
 
 function añadirProductoAlCarrito(evento) {
     // Anyadimos el Nodo a nuestro carrito
-    carrito.push(evento.target.getAttribute('data-id'))
+    carrito.push(parseInt(evento.target.getAttribute('data-id')));
     console.log('Se añadió el producto con el id: ', evento.target.getAttribute('data-id'));
     // Actualizamos el carrito 
     mostrarCarrito();
