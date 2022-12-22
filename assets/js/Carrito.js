@@ -345,7 +345,7 @@ function vaciarCarrito() {
 }
 
 function visitarTienda(){
-    window.location.href="../../html/Tienda.html";
+    window.location.href="https://deshih.github.io/CYBERBUG-Proyecto/html/Tienda.html";
 }
 
 // funciones que se disparan al correr la pagina
