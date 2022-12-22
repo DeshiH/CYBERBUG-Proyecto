@@ -30,7 +30,7 @@ const baseDeDatos = [
             sabor: 'Sabor: Intenso-suave.',
             contenido: 'Contenido: 500g.',
             categoria:'Molido',
-            imagen: '/assets/img/Yatzil-molido.jpg'
+            imagen: 'https://deshih.github.io/CYBERBUG-Proyecto/assets/img/Yatzil-molido.jpg'
         },
         {
             id: 2,
