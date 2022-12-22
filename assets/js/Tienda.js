@@ -42,7 +42,7 @@ const baseDeDatos = [
             sabor: 'Sabor: Intenso-medio.',
             contenido: 'Contenido: 500g.',
             categoria:'Molido',
-            imagen: '../img/Imox-molido.jpg'
+            imagen: '../assets/img/Imox-molido.jpg'
         },
         {
             id: 3,
