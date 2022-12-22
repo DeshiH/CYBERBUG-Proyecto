@@ -54,7 +54,7 @@ const baseDeDatos = [
             sabor: 'Sabor: Intenso-fuerte.',
             contenido: 'Contenido: 500g.',
             categoria:'Molido',
-            imagen: '../../assets/img/yaxkinmolidov.jpg'
+            imagen: '../assets/img/yaxkinmolidov.jpg'
         },
         {
             id: 4,
@@ -66,7 +66,7 @@ const baseDeDatos = [
             sabor: 'Sabor: Suave, chocolate.',
             contenido: 'Contenido: 500g.',
             categoria:'Molido',
-            imagen: '../../assets/img/amaitemolido.jpg'
+            imagen: '../assets/img/amaitemolido.jpg'
         },
         {
             id: 5,
@@ -139,7 +139,7 @@ const baseDeDatos = [
             descripcion: '',
             contenido: 'Contenido: 500g.',
             categoria:'Grano',
-            imagen: '../../assets/img/ixchelgranov.jpg'
+            imagen: '../assets/img/ixchelgranov.jpg'
         },
         {
             id: 11,
