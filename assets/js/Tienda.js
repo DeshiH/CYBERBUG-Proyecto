@@ -66,7 +66,7 @@ const baseDeDatos = [
             sabor: 'Sabor: Suave, chocolate.',
             contenido: 'Contenido: 500g.',
             categoria:'Molido',
-            imagen: '../assets/img/amaitemolidov.jpg'
+            imagen: '../../assets/img/amaitemolidov.jpg'
         },
         {
             id: 5,
