@@ -132,3 +132,84 @@ footer{
      margin-top: 100px;
     background-color: rgb(244, 213, 141);
 }
+
+
+
+
+#header {
+    font-family: 'Fraunces', serif;
+    color: #444444;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5faee3;
+    text-decoration: none;
+}
+
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#estrellitas{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #4b6c5b;
+    color: white;
+    padding: 30px;
+    margin-right: 0;
+    margin-left: 0;
+}
+#buttonModal{
+    font-family: 'Montserrat', sans-serif;
+    background-color:wheat;
+    color:#A05C2D;
+    padding: 30px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+}
+
+#form p {
+    text-align: center;
+}
+
+#inputReseñas1, #inputReseñas2 {
+    font-size: 14px;
+    text-align:left;
+    color: white;
+}
+
+#modalBody,#mensajeModal{
+    font-size: 14px;
+    text-align:left;
+    color:#4b6c5b;
+    font-family:'Montserrat', sans-serif;
+}
+
+::placeholder{
+    font-size: 14px;
+    text-align:left;
+    color: white;
+}
+
+textarea {
+    resize: none;
+}
+
+#encabezado{
+    font-family: 'Fraunces', serif;
+    font-size: 12px;
+}
+

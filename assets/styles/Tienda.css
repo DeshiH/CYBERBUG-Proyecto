@@ -1,12 +1,22 @@
 body{
-  background-image: url(/assets/img/patron.png);
+  background-image: url(/src/patron.png);
   background-size:contain;
   background-color: bisque;
   background-repeat:initial;
   background-position: center;
   position:relative;
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
 
+a {
+  color: #A05C2D;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #A05C2D;
+  text-decoration: none;
 }
 
 
@@ -65,7 +75,6 @@ font-family: 'Fraunces', serif;
   text-decoration: none;
   
 }
-
 h2{
   text-align: center;
   margin-top: 20px;
@@ -74,126 +83,209 @@ h2{
 
 
 footer{
-  padding: 50px;
-   margin-top: 150px;
-  background-color: rgb(244, 213, 141);
-}
-
-.links-list{
-
-list-style: none;
-}
-
-.non-decoration{
-text-decoration: none;
-color: black;
-}
- 
-footer{
   padding: 20px;
    margin-top: 100px;
   background-color: rgb(244, 213, 141);
 }
 
- 
 
 :root {
-  --a: #344E41 ;
-  --b: #A05C2D;
-  --c: #F4D58D;
-  --texto1: black;
-  --texto2: white;
-}
+    --a: #344E41 ;
+    --b: #A05C2D;
+    --c: #F4D58D;
+    --texto1: black;
+    --texto2: white;
+  }
+  
 
-
-button {
-font-family: 'Montserrat', serif;
-font-size: 10px;
-font-weight: 900;
-}
+ button {
+  font-family: 'Montserrat', serif;
+  font-size: 10px;
+  font-weight: 900;
+ }
+   
  
-
-
-#rightBttns {
-  justify-items: right;
-  padding-right: 0;
-  text-align: end;
-}
-
-#leftBttns {
-  justify-items: left;
-}
-
+  
+  #rightBttns {
+    justify-items: right;
+    padding-right: 0;
+    text-align: end;
+  }
+  
+  #leftBttns {
+    justify-items: left;
+  }
+  
 #categoriaDisplay{
-font-size: 25px;
+  font-size: 25px;
 }
 
 .card-header{
-font-size: 25px;
+  font-size: 25px;
 }
 
 .precio{
-font-size: 20px;
+  font-size: 20px;
 }
 
 .storeButton1 {
-  padding: 1em .8em;
-  font-size: 10px;
-  font-family: 'Montserrat', serif;
-  letter-spacing: 2px;
-  font-weight: 500;
-  color: black;
-  background-color: var(--c);
-  border: none;
-  border-radius: 0px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
+    padding: 1em .8em;
+    font-size: 10px;
+    font-family: 'Montserrat', serif;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: black;
+    background-color: var(--c);
+    border: none;
+    border-radius: 0px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
 }  
 
 .storeButton1:hover {
-  background-color: var(--b);
+    background-color: var(--b);
+    box-shadow: 0px 15px 20px var(--c);
+    color: black;
+    transform: translateY(-7px);
+}
+
+.storeButton1:active {
+    transform: translateY(-1px);
+  }
+
+#categoriaDisplay{
+ font-family: 'Fraunces', serif; 
+}
+
+.cardbody{
+  align-items: center;
+  
+}
+
+.card-header{
+  background-color: #f2ead6;
+}
+
+.card-body{
+  background-color: #f2ead6;
+  margin: 0px 0px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+.precio{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.precioAnterior{
+  color: #344E41;
+  text-decoration:line-through;
+}
+
+.carritoContador{
+  color: white;
+  font-family: 'Fraunces', serif;
+}
+
+.modal-content{
+  background-color: bisque;
+}
+
+#staticBackdrop h1{
+  font-family: 'Fraunces', serif;
+  font-size: 11px;
+}
+
+#pagarButton {
+  background-color: #699d83;
+}
+
+#pagarButton:hover {
+  background-color: var(--a);
   box-shadow: 0px 15px 20px var(--c);
   color: black;
   transform: translateY(-7px);
 }
 
-.storeButton1:active {
-  transform: translateY(-1px);
+.quitarButton{
+  background-color: #699d83;
+  font-size: 10px;
+  margin-left: -100px;
+  margin-right: -10px;
+  border-left: -20px;
+  border-right: -10px;
 }
 
-#categoriaDisplay{
-font-family: 'Fraunces', serif; 
-}
-
-.cardbody{
-align-items: center;
-
-}
-
-.card-header{
-background-color: #f2ead6;
-}
-
-.card-body{
-background-color: #f2ead6;
-margin: 0px 0px;
-padding-top: 0px;
-padding-bottom: 10px;
-}
-
-.precio{
-padding-top: 0px;
-padding-bottom: 0px;
-}
-
-.precioAnterior{
-color: #344E41;
-text-decoration:line-through;
+.quitarButton:hover {
+  background-color: var(--a);
 }
 
 .carritoContador{
-color: white;
-font-family: 'Fraunces', serif;
+  background-color:rgb(160, 92, 45);
+}
+
+.list-group col{
+  font-size: 14px;
+}
+
+
+.columna1{
+  max-width: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
+  align-items: center;
+}
+
+.columna2{
+  max-width: 70px;
+  align-items: center;
+}
+
+.columna2 img{
+  border-radius: 6px;
+}
+
+.columna3{
+  max-width: 70px;
+  align-items: center;
+}
+
+.columna4{
+  max-width: 70px;
+  align-items: center;
+}
+
+.columna5{
+  max-width: 50px;
+  padding-left: 0px;
+  align-items: center;
+}
+
+.list-group li{
+  height: 80px;
+  align-items: center;
+}
+
+#staticBackdrop{
+  position: fixed;
+}
+
+#leyendaTotal{
+  padding-left: 10px;
+}
+
+#total{
+  padding-left: 0px;
+}
+
+#navbarCK{
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }

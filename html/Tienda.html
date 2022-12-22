@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- Inicio de nav bar-->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg" id = "navbarCK">
       <div class="container-fluid">
         <img class="rounded-circle" src="/assets/img/Coffe Kode.png" width="60px" alt="" />
         <a class="title" href="/home.html">
@@ -62,8 +62,8 @@
                 </span>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/html/Carrito1.html">
+            <li class="nav-item dropdown">
+              <a class="nav-link" type="button" id = "iconoCarrito" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 <link rel="stylesheet"
                   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,-25" />
                 <span class="material-symbols-outlined">
@@ -72,189 +72,131 @@
               </a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2 search" type="search" placeholder="Escribe aquí" aria-label="Search" />
-            <button class="btn btn-outline-success search_button" type="submit">
-              Buscar
-            </button>
-          </form>
         </div>
       </div>
     </nav>
     <!-- Final de la navbar -->
-
+  <br>
+  <br>
     <!-- Banner -->
-
-
-
-  <!-- Banner -->
-  <section id="banner">
-    <br>
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="5000">
-            <img src="/assets/img/banner3.png" class="d-block w-100 img-fluid" alt="Envio Gratis" height="50px">
-          </div>
-          <div class="carousel-item" data-bs-interval="4000">
-            <img src="/assets/img/banner-2.png" class="d-block w-100 img-fluid" alt="..." height="50px">
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img src="/assets/img/banner1.png" class="d-block w-100 img-fluid" alt="..." height="50px">
-          </div>
-        </div>
-      </div>
+    <section id="banner">
       <br>
-  </section>
-
-
-  <!-- Botones de categorías y filtros-->     
-  <div class="bttn-container">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <img src="/assets/img/banner1.png" class="d-block w-100 img-fluid" alt="Envio Gratis" height="50px">
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <img src="/assets/img/banner-2.png" class="d-block w-100 img-fluid" alt="..." height="50px">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="/assets/img/banner1.png" class="d-block w-100 img-fluid" alt="..." height="50px">
+            </div>
+          </div>
+        </div>
+        <br>
+    </section>
+  
+  
+    <!-- Botones de categorías y filtros-->     
+    <div class="bttn-container">
+      <div class = "row">
+            <div class = "col">
+            </div>
+            <div id = "leftBttns" class = "col-10">
+                  <button class = "storeButton1" id = "botonMolido">MOLIDO</button>          
+                  <button class = "storeButton1"  id = "botonGrano">GRANO</button>      
+                  <button class = "storeButton1"  id = "botonPromociones">PROMOCIONES</button>
+            </div>
+            <div class = "col">
+            </div>
+      </div>
+    </div>
+  
+  
+      <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Carrito de Compras</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+              <p id = "statusCarrito"> 
+                Tu carrito está vacío :(
+              </p>
+              <ul id="carrito" class="list-group">
+                <!-- Aqui se mostraran los articulos del carrito-->
+         
+              </ul>
+              <hr>
+              <div class="row align-items-center">
+                <div class="col">
+                  <p class="text-right">Artículos: <span id="totalArticulos"></span></p>
+                </div>
+                <div class="col">
+                  <p class="text-right" id = "leyendaTotal">Total: $<span id="total"></span></p>
+                </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button id="vaciarButton" type="button" class="btn btn-secondary storeButton1">VACIAR CARRITO</button>
+          <button id="pagarButton" href="/html/Carrito1.html" type="button" class="btn btn-primary storeButton1">PAGAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+    <!-- Tarjetas de productos -->
+    <div class="productsContainer">
     <div class = "row">
-          <div class = "col">
-          </div>
-          <div id = "leftBttns" class = "col-10">
-                <button class = "storeButton1" id = "botonMolido">MOLIDO</button>          
-                <button class = "storeButton1"  id = "botonGrano">GRANO</button>      
-                <button class = "storeButton1"  id = "botonPromociones">PROMOCIONES</button>
-          </div>
-          <!--<div id = "rightBttns" class = "col-5">
-            <button class = "filterBttn">Filtro</button>
-          </div> -->
-          <div class = "col">
-          </div>
-    </div>
-  </div>
-
-  <!-- Tarjetas de productos -->
-  <div class="productsContainer">
-  <div class = "row">
-    <div class="col-1">
-    </div>
-    <div class="col-10" id="items">
-      <hr>
-      <p id = "categoriaDisplay"> MOLIDO </p>
-      <div  class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 listaProductos">
-        <div class="col">
-          <div class="card h-100" id="Molido1">
-            <img src="/assets/img/yatzilmolidov.jpg" class="card-img-top" alt="yatzilmolidov">
-            <div class="card-header">
-              <h5 class=" font-weight-bold productName">Yatzil Molido</h5>
-            </div>
-            <div class="card-body">
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>Origen: Chiapas.</li>
-                <li>Sabor: Intenso-suave.</li>
-                <li>Contenido: 500g.</li>
-              </ul>
-              <h1 class="pricing-card-title precio">$ <span class="">149.99</span></h1>
-              <button class = "storeButton1 agregar-carrito" data-id="M1">AÑADIR +</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100" id="Molido2">
-            <img src="/assets/img/imoxmolidov.jpg" class="card-img-top" alt="...">
-            <div class="card-header">
-              <h5 class=" font-weight-bold productName">Imox Molido</h5>
-          </div>
-            <div class="card-body">
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>Origen: Tabasco.</li>
-                <li>Sabor: Intenso-medio.</li>
-                <li>Contenido: 500g.</li>
-              </ul>
-              <h1 class="pricing-card-title precio">$ <span class="">149.99</span></h1>
-              <button class = "storeButton1 agregar-carrito" data-id="M2">AÑADIR +</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100" id="Molido3">
-            <img src="/assets/img/yaxkinmolidov.jpg" class="card-img-top" alt="...">
-            <div class="card-header">
-              <h5 class=" font-weight-bold productName">Yaxkin Molido</h5>
-          </div>
-            <div class="card-body">
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>Origen: Veracruz.</li>
-                <li>Sabor: Intenso-fuerte.</li>
-                <li>Contenido: 500g.</li>
-              </ul>
-              <h1 class="pricing-card-title precio">$ <span class="">149.99</span></h1>
-              <button class = "storeButton1 agregar-carrito" data-id="M3">AÑADIR +</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100" id="Molido4">
-            <img src="/assets/img/amaitemolidov.jpg" class="card-img-top" alt="...">
-            <div class="card-header">
-              <h5 class=" font-weight-bold productName">Amaité Molido</h5>
-          </div>
-            <div class="card-body">
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>Origen: Tabasco.</li>
-                <li>Sabor: Suave, chocolate.</li>
-                <li>Contenido: 500g.</li>
-              </ul>
-              <h1 class="pricing-card-title precio">$ <span class="">149.99</span></h1>
-              <button class = "storeButton1 agregar-carrito" data-id="M4">AÑADIR +</button>
-            </div>
-          </div>
-          </div>
-          <div class="col">
-            <div class="card h-100" id="Molido5">
-              <img src="/assets/img/ixchelmolidov.jpg" class="card-img-top" alt="...">
-              <div class="card-header">
-                <h5 class=" font-weight-bold productName">Ixchel Molido</h5>
-            </div>
-              <div class="card-body">
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>Origen: Chiapas.</li>
-                  <li>Sabor: Suave, afrutado.</li>
-                  <li>Contenido: 500g.</li>
-                </ul>
-                <h1 class="pricing-card-title precio">$ <span class="">149.99</span></h1>
-                <button class = "storeButton1 agregar-carrito" data-id="M5">AÑADIR +</button>
-              </div>
-            </div>
-          </div>
+      <div class="col-1">
       </div>
-    </div>
-  </div>
-  </div>
-
-
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row col-12">
-     
-          <div class="container d-md-flex py-4">
-            <div class="me-md-auto text-center text-md-start">
-              <div class="copyright">
-                <strong><span>© 2022 Copyright. Coffee Kode Cyberbug-team. Designed by
-                    <a href="https://github.com/DeshiH/CYBERBUG-Proyecto">Coffee Kode</a></span></strong>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-md-3 social-links text-center text-md-right pt-3 pt-md-0">
-            <h5>Redes Sociales</h5>
-            <a href="#" class="twitter"><i class="bx bxl-twitter"><img class="rounded-pill"
-                  src="/assets/img/facebook.png" width="50px" alt="Facebook" /></i></a>
-            <a href="#" class="facebook"><i class="bx bxl-facebook"><img class="rounded-pill"
-                  src="/assets/img/linkedin.png" width="50px" alt="Linkedin" /></i></a>
-            <a href="#" class="Github"><i class="bx bxl-instagram"><img src="/assets/img/github.png" width="50px"
-                  alt="Facebook" /></i></a>
-          </div>
+      <div class="col-10" id="items">
+        <hr>
+        <p id = "categoriaDisplay"> MOLIDO </p>
+        <div  class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 listaProductos">
+          
         </div>
       </div>
     </div>
-
-
-  </footer>
+    </div>
+  
+  
+  
+    <!--  FOOTER -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row col-12">
+       
+            <div class="container d-md-flex py-4">
+              <div class="me-md-auto text-center text-md-start">
+                <div class="copyright">
+                  <strong><span>© 2022 Copyright. Coffee Kode Cyberbug-team. Designed by
+                      <a href="https://github.com/DeshiH/CYBERBUG-Proyecto">Coffee Kode</a></span></strong>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="col-md-3 social-links text-center text-md-right pt-3 pt-md-0">
+              <h5>Redes Sociales</h5>
+              <a href="#" class="twitter"><i class="bx bxl-twitter"><img class="rounded-pill"
+                    src="/assets/img/facebook.png" width="50px" alt="Facebook" /></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"><img class="rounded-pill"
+                    src="/assets/img/linkedin.png" width="50px" alt="Linkedin" /></i></a>
+              <a href="#" class="Github"><i class="bx bxl-instagram"><img src="/assets/img/github.png" width="50px"
+                    alt="Facebook" /></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+    </footer>
 
 
     

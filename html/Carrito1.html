@@ -17,311 +17,237 @@
 </head>
 
 <body>
-  <!-- ======= NavBar ======= -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <img class="rounded-circle" src="/assets/img/Coffe Kode.png" width="60px" alt="" />
-      <a class="title" href="/home.html">
-        <h4>Coffee Kode</h4>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- ======= NavBar ======= -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <img class="rounded-circle" src="/assets/img/Coffe Kode.png" width="60px" alt="Coffee" />
+        <a class="title" href="/home.html">
+          <h4>Coffee Kode</h4>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse font-navbar" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/html/Tienda.html">Tienda</a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="/html/Reseñas.html">Reseñas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/contactanos.html">Contáctanos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                ¿Quiénes somos?
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/html/FAQ.html">FAQ</a></li>
+  
+                <li>
+                  <a class="dropdown-item" href="/html/Acerca de nosotros.html">Sobre nosotros</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/html/Terminos y condiciones.html">Terminos y Condiciones</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/Login.html">
+                <link rel="stylesheet"
+                  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,1,0" />
+                <span class="material-symbols-outlined user">
+                  account_circle
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/Carrito1.html" id="carritoIcon">
+                <link rel="stylesheet"
+                  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,-25" />
+                <span class="material-symbols-outlined">
+                  shopping_bag
+                </span>
+              </a>
+            </li>
+          </ul>
 
-      <div class="collapse navbar-collapse font-navbar" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="/html/Tienda.html">Tienda</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="/html/Reseñas.html">Reseñas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/html/contactanos.html">Contáctanos</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              ¿Quiénes somos?
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/html/FAQ.html">FAQ</a></li>
-
-              <li>
-                <a class="dropdown-item" href="/html/Acerca de nosotros.html">Sobre nosotros</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="/html/Terminos y condiciones.html">Terminos y Condiciones</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/html/Login.html">
-              <link rel="stylesheet"
-                href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,1,0" />
-              <span class="material-symbols-outlined user">
-                account_circle
-              </span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/html/Carrito1.html">
-              <link rel="stylesheet"
-                href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,-25" />
-              <span class="material-symbols-outlined">
-                shopping_bag
-              </span>
-            </a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2 search" type="search" placeholder="Escribe aquí" aria-label="Search" />
-          <button class="btn btn-outline-success search_button" type="submit">
-            Buscar
-          </button>
-        </form>
-      </div>
-    </div>
-  </nav>
-  <!-- ===== End NavBar ===== -->
-
-  <!-- ===== Container padre ===== -->
-  <div class="container padre col-8 container-fluid">
-    <div class="row">
-      <!-- ===== Divs para tabla prodcutos y precios ===== -->
-      <div class="container text-center p-2">
-        <div class="row">
-          <div class="col-4">
-            Productos
-          </div>
-          <div class="col-3">
-            Precio por unidad
-          </div>
-          <div class="col-2">
-            Cantidad
-          </div>
-          <div class="col-3">
-            Total
-          </div>
         </div>
       </div>
-      <br>
-      <hr>
-      <br>
-
-      <div class="container text-center p-2">
-        <div class="row">
-          <div class="col-4">
-            <img src="/assets/img/4variedades.png" width="150px" class="img" alt="Café4variedades">
-          </div>
-          <div class="col-3">
-            $90
-          </div>
-          <div class="col-3">
-            <div class="container">
-              <button type="button" class="btn btn-primary btn-sm">+</button>
-              3
-              <button type="button" class="btn btn-primary btn-rs">-</button>
-            </div>
-          </div>
-          <div class="col-2">
-            $180
-          </div>
-        </div>
-      </div>
-      <br>
-      <hr>
-      <br>
-
-      <div class="container text-center p-2">
-        <div class="row">
-          <div class="col-4">
-            <img src="/assets/img/Ixchel Bolsa2.jpeg" width="150px" class="img" alt="Cafétostado">
-          </div>
-          <div class="col-3">
-            $200
-          </div>
-          <div class="col-3">
-
-            <button type="button" class="btn btn-primary btn-sm">+</button>
-            3
-            <button type="button" class="btn btn-primary btn-rs">-</button>
-          </div>
-          <div class="col-2">
-            $600
-          </div>
-        </div>
-      </div>
-      <br>
-      <hr>
-      <br>
-
-      <div class="container text-center p-2">
-        <div class="row">
-          <div class="col-4">
-            <img src="/assets/img/Yatzil Costal.jpeg" width="150px" class="img" alt="Costalcafé">
-          </div>
-          <div class="col-3">
-            $350
-          </div>
-          <div class="col-3">
-
-            <button type="button" class="btn btn-primary btn-sm">+</button>
-            3
-            <button type="button" class="btn btn-primary btn-rs">-</button>
-
-          </div>
-          <div class="col-2">
-            $1,050
-          </div>
-        </div>
-      </div>
-      <br>
-      <hr>
-      <br>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-5">
-
-          </div>
-          <!-- ===== Div ultima linea de total a pagar ===== -->
-          <div class="col-3">
-            Total a pagar
-          </div>
-          <div class="col-4">
-            $3,333
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
+    </nav>
   <br>
-
-  <!-- ===== Botón pagar ===== -->
-  <button class="btn btn-outline-success pay_button" type="submit"><a href="/html/Envio.html">Pagar</a></button>
-  <br>
-  <br>
-  <!-- ===== Carrusel ===== -->
-
-  <div class="carousel">
-    <div class="container carousel">
-      <div class="tittle">
-        <h2>Aprovecha nuestras promociones</h2>
-      </div>
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <label for="one" class="form-label"></label>
-        <input type="radio" name="dot" placeholder="" id="one">
-        <label for="two" class="form-label"></label>
-        <input type="radio" name="dot" placeholder="" id="two">
-        <div class="main-card">
-          <div class="cards">
-            <div class="caras">
-              <div class="content">
-                <div class="card" style="width: 18rem;">
-                  <img src="/assets/img/promo.jpeg" class="card-img-top" alt="...">
-                  <div class="card-body ">
-                    <p class="card-text">Yatzil, Yaxkin y Amaité. 3 bolsas de café, grano molido 1kg cada una.</p>
-                    <p>$399.99</p>
-                    <button type="button" class="btn btn-add btn-sm">Añadir+</button>
-
+   
+     <!-- ===== End NavBar ===== -->
+  
+     <!-- ===== Container padre ===== -->
+     <div class="container padre col-8 container-fluid"> 
+      <h1>Resumen de Compras</h1>
+     </div>
+      <div class="container padre col-8 container-fluid"> 
+          <div class="row">
+         <!-- ===== Divs para tabla prodcutos y precios ===== -->
+              <div class="container text-center p-2">
+                  <div class="row">
+                  <div class="col-4">
+                      Productos
                   </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="card-coffee">
-              <div class="content">
-                <div class="card" style="width: 18rem;">
-                  <img src="/assets/img/promo2.jpeg" class="card-img-top" alt="...">
-                  <div class="card-body ">
-                    <p class="card-text">Yaztil, Yaxkin, Imox, Amaité, Ixcehl. 5 bolsas de café, grano entero 1kg cada
-                      una.</p>
-                    <p>$549.99</p>
-                    <button type="button" class="btn btn-add btn-sm">Añadir+</button>
-
+                  <div class="col-3">
+                     Precio por unidad
                   </div>
-                </div>
-
+                  <div class="col-2">
+                      Cantidad
+                  </div>
+               <div class="col-3">
+                      Total
+                  </div>
+                  </div>
               </div>
-            </div>
-            <div class="card-coffee">
-              <div class="content">
+              <br>
+              <hr>
+              <br>
+              <div id="resumencarrito">
+         
+                      </div>
+                      <!-- ===== Div ultima linea de total a pagar ===== -->
+                      <div class="col-3">
+                          Total a pagar
+                       </div>
+                      <div class="col-4" id="totalnet">
+                          $3,333 
+                      </div>
+                  </div>
+  
+              </div>
+  
+          </div> 
+      </div>
+        <br>
+    
+        <!-- ===== Botón pagar ===== -->
+        <button class="btn btn-outline-success pay_button" type="submit" id="botonPagar"><a href="/html/Envio.html">Pagar</a></button>
+        <br>
+        <br>
+   <!-- ===== Carrusel ===== -->
+     
+   <div class="carousel">
+        <div class="container carousel">
+          <div class="tittle">
+          <h2>Aprovecha nuestras promociones</h2>
+        </div>
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <label for="one" class="form-label"></label>
+          <input type="radio" name="dot" placeholder="" id="one">
+          <label for="two" class="form-label"></label>
+          <input type="radio" name="dot" placeholder="" id="two">
+          <div class="main-card">
+            <div class="cards">
+              <div class="caras">
+               <div class="content">
                 <div class="card" style="width: 18rem;">
                   <img src="/assets/img/promo3.jpeg" class="card-img-top" alt="...">
                   <div class="card-body ">
-                    <p class="card-text">Yaxkin, Yaztil, Amaité. 3 bolsas de café, grano molido 1kg cada una.</p>
-                    <p>$349.99</p>
-                    <button type="button" class="btn btn-add btn-sm">Añadir+</button>
-
+                    <p class="card-text">Yatzil, Yaxkin y Amaité. 3 bolsas de café de grano entero 1kg cada una.</p>
+                    <p>$399.99</p>
+                    <button type="button" class="btn btn-add btn-sm" id="añadir1">Comprar</button> 
+                    
                   </div>
                 </div>
-
+               
+               </div>
               </div>
-            </div>
-          </div>
-          <div class="cards">
-            <div class="card-coffee">
-              <div class="content">
-                <div class="card" style="width: 18rem;">
-                  <img src="/assets/img/promo4.jpeg" class="card-img-top" alt="...">
-                  <div class="card-body ">
-                    <p class="card-text">Yaxkin. 2 bolsas de grano entero 1kg.</p>
-                    <p>$279.99</p>
-                    <button type="button" class="btn btn-add btn-sm">Añadir+</button>
-
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="card-coffee">
-              <div class="content">
+              <div class="card-coffee">
+               <div class="content">
                 <div class="card" style="width: 18rem;">
                   <img src="/assets/img/promo5.jpeg" class="card-img-top" alt="...">
                   <div class="card-body ">
-                    <p class="card-text">Ixchel. Bolsa de grano molido 1kg y bolsa de grano entero 1kg.</p>
-                    <p>$249.99</p>
-                    <button type="button" class="btn btn-add btn-sm">Añadir+</button>
-
+                    <p class="card-text">Yaztil, Yaxkin, Imox, Amaité, Ixcehl. 5 bolsas de café, grano entero 1kg cada una.</p>
+                    <p>$549.99</p>
+                    <button type="button" class="btn btn-add btn-sm" id="añadir2">Comprar</button> 
+                    
                   </div>
                 </div>
-
+               
+               </div>
+              </div>
+              <div class="card-coffee">
+               <div class="content">
+                <div class="card" style="width: 18rem;">
+                  <img src="/assets/img/promo4.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body ">
+                    <p class="card-text">Yaxkin, Yaztil y Amaité. 3 bolsas de café grano molido 1kg cada una.</p>
+                    <p>$349.99</p>
+                    <button type="button" class="btn btn-add btn-sm" id="añadir3">Comprar</button> 
+                    
+                  </div>
+                </div>
+               
+               </div>
               </div>
             </div>
-            <div class="card-coffee">
-              <div class="content">
+            <div class="cards">
+              <div class="card-coffee">
+               <div class="content">
                 <div class="card" style="width: 18rem;">
-                  <img src="/assets/img/Ixchel.jpeg" class="card-img-top" alt="...">
+                  <img src="/assets/img/promo1.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body ">
+                    <p class="card-text">Yaxkin. 2 bolsas de café grano molido 1kg.</p>
+                    <p>$279.99</p>
+                    <button type="button" class="btn btn-add btn-sm" id="añadir4">Comprar</button> 
+                    
+                  </div>
+                </div>
+                
+               </div>
+              </div>
+              <div class="card-coffee">
+               <div class="content">
+                <div class="card" style="width: 18rem;">
+                  <img src="/assets/img/promo2.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body ">
+                    <p class="card-text">Ixchel. Bolsa de grano molido 1kg y bolsa de grano entero 1kg.</p>
+                    <p>$249.99</p>
+                    <button type="button" class="btn btn-add btn-sm" id="añadir5">Comprar</button> 
+                    
+                  </div>
+                </div>
+                 
+               </div>
+              </div>
+              <div class="card-coffee">
+               <div class="content">
+                <div class="card" style="width: 18rem;">
+                  <img src="/assets/img/ixchelgranov.jpeg" class="card-img-top" alt="...">
                   <div class="card-body ">
                     <p class="card-text">Ixchel. Bolsa de grano entero 1kg y una taza conmemorativa.</p>
                     <p>$333.99</p>
-                    <button type="button" class="btn btn-add btn-sm">Añadir+</button>
-
+                    <button type="button" class="btn btn-add btn-sm" id="añadir6">Comprar</button> 
+                    
                   </div>
                 </div>
-
+                
+               </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="button">
-          <label for="one" class=" active one"></label>
-          <label for="two" class="two"></label>
+          <div class="button">
+            <label for="one" class=" active one"></label>
+            <label for="two" class="two"></label>
+          </div>
         </div>
       </div>
+  
     </div>
-
-  </div>
-
+  
+  <!-- ===== Footer ===== -->
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
         <div class="row col-12">
-
+     
           <div class="container d-md-flex py-4">
             <div class="me-md-auto text-center text-md-start">
               <div class="copyright">
@@ -330,8 +256,8 @@
               </div>
             </div>
           </div>
-
-
+  
+  
           <div class="col-md-3 social-links text-center text-md-right pt-3 pt-md-0">
             <h5>Redes Sociales</h5>
             <a href="#" class="twitter"><i class="bx bxl-twitter"><img class="rounded-pill"
@@ -339,17 +265,22 @@
             <a href="#" class="facebook"><i class="bx bxl-facebook"><img class="rounded-pill"
                   src="/assets/img/linkedin.png" width="50px" alt="Linkedin" /></i></a>
             <a href="#" class="Github"><i class="bx bxl-instagram"><img src="/assets/img/github.png" width="50px"
-                  alt="Facebook" /></i></a>
+                  alt="GitHub" /></i></a>
           </div>
         </div>
       </div>
     </div>
-
-
+  
+  
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
+  
+        
+        <!-- ===== Link JS ===== -->
+        <script src="/assets/js/Carrito.js"></script>
+    <!-- ===== Link Bootstrap JS ===== -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>
 
 </html>
