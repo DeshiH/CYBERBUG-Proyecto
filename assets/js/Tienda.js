@@ -30,7 +30,7 @@ const baseDeDatos = [
             sabor: 'Sabor: Intenso-suave.',
             contenido: 'Contenido: 500g.',
             categoria:'Molido',
-            imagen: '../img/yatzilmolidov.jpg'
+            imagen: '../img/Yatzil-molido.jpg'
         },
         {
             id: 2,
@@ -42,7 +42,7 @@ const baseDeDatos = [
             sabor: 'Sabor: Intenso-medio.',
             contenido: 'Contenido: 500g.',
             categoria:'Molido',
-            imagen: '../img/imoxmolidov.jpg'
+            imagen: '../img/Imox-molido.jpg'
         },
         {
             id: 3,
@@ -54,7 +54,7 @@ const baseDeDatos = [
             sabor: 'Sabor: Intenso-fuerte.',
             contenido: 'Contenido: 500g.',
             categoria:'Molido',
-            imagen: '../img/yaxkinmolidov.jpg'
+            imagen: '../img/Yaxkin-molido.jpg'
         },
         {
             id: 4,
@@ -66,7 +66,7 @@ const baseDeDatos = [
             sabor: 'Sabor: Suave, chocolate.',
             contenido: 'Contenido: 500g.',
             categoria:'Molido',
-            imagen: '../img/amaitemolidov.jpg'
+            imagen: '../img/Amait-emolido.jpg'
         },
         {
             id: 5,
@@ -78,7 +78,7 @@ const baseDeDatos = [
             sabor: 'Sabor: Suave, afrutado.',
             contenido: 'Contenido: 500g.',
             categoria:'Molido',
-            imagen: '../img/ixchelmolidov.jpg'
+            imagen: '../img/Ixchel-molido.jpg'
         },
         {
             id: 6,
@@ -90,7 +90,7 @@ const baseDeDatos = [
             sabor: 'Sabor: Intenso-suave.',
             contenido: 'Contenido: 500g.',
             categoria:'Grano',
-            imagen: '../img/yatzilgranov.jpg'
+            imagen: '../img/Yatzil-grano.jpg'
         },
         {
             id: 7,
@@ -102,7 +102,7 @@ const baseDeDatos = [
             sabor: 'Sabor: Intenso-medio.',
             contenido: 'Contenido: 500g.',
             categoria:'Grano',
-            imagen: '../img/imoxgranov.jpg'
+            imagen: '../img/Imox-grano.jpg'
         },
         {
             id: 8,
@@ -114,7 +114,7 @@ const baseDeDatos = [
             sabor: 'Sabor: Intenso-fuerte.',
             contenido: 'Contenido: 500g.',
             categoria:'Grano',
-            imagen: '../img/yaxkingranov.jpg'
+            imagen: '../img/Yaxkin-grano.jpg'
         },
         {
             id: 9,
@@ -126,7 +126,7 @@ const baseDeDatos = [
             sabor: 'Sabor: Suave, chocolate.',
             contenido: 'Contenido: 500g.',
             categoria:'Grano',
-            imagen: '../img/amaitegranov.jpg'
+            imagen: '../img/Amaite-grano.jpg'
         },
         {
             id: 10,
@@ -139,7 +139,7 @@ const baseDeDatos = [
             descripcion: '',
             contenido: 'Contenido: 500g.',
             categoria:'Grano',
-            imagen: '../img/ixchelgranov.jpg'
+            imagen: '../img/Ixchel-grano.jpg'
         },
         {
             id: 11,
