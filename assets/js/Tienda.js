@@ -579,7 +579,7 @@ function cargarCarritoDeLocalStorage () {
 }
 
 function irAPagar(){
-    window.location.href="../../html/Carrito1.html";
+    window.location.href="../../Carrito1.html";
 }
 
 // 
