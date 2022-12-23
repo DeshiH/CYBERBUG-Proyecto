@@ -169,11 +169,20 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     background-color:wheat;
     color:#A05C2D;
-    padding: 30px;
+    padding: 8px;
     margin-right: 0;
     margin-left: 0;
+    border-color: wheat;
+}
+a{
+    color: #A05C2D;
+  text-decoration: none;
 }
 
+a:hover{
+    color: #A05C2D;
+    text-decoration: none;
+}
 
 #form {
     width: 250px;
