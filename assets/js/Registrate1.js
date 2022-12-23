@@ -144,7 +144,7 @@ function validarApellido(apellido) {
         var usuario = crearJSON();
 
         if (validarConfirmPassword(usuario.password, passwordConfirm.value) == true){
-            fetch ('URL', { // La direccion que creamos en JAVA
+            fetch ('http://localhost:8080/api/CoffeeKode/users', { // La direccion que creamos en JAVA
     method: 'POST', // el método que  voy a utilizar
     headers: {
         'Content-type': 'application/json' // El tipo de contenido que usamos es JSON
@@ -154,7 +154,7 @@ function validarApellido(apellido) {
 
     })
     .then((response) => response.text()) //Esta es la respuesta que nos da el servidor, es este caso la recibo como un texto. Lo hacemos asi por si en algun momento quiero mostrar ese texto en pantall (innerHTML o textContent).
-    .then((datos) => { //esta promesa es para poder mostrar si la conexion al servidor fue exitosa
+    .then((usuario) => { //esta promesa es para poder mostrar si la conexion al servidor fue exitosa
           Swal.fire({
             icon: 'success',
             title: '¡Éxito!',
