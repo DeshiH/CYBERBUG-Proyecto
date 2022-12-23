@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link href="../assets/styles/Registro.css" rel="stylesheet">
+    <link href="../assets/styles/Registrate1.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,8 +15,7 @@
 </head>
 <body>
     
- <!-- ======= NavBar ======= -->
- <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <img class="rounded-circle" src="../assets/img/Coffe Kode.png" width="60px" alt="" />
       <a class="title" href="../index.html">
@@ -76,142 +75,184 @@
 
       </div>
     </div>
-  </nav>
+  </nav> 
 <!-- ===== End NavBar ===== -->
 
-    <!-- ===== Login ===== -->
-    <div class="container text-center" id="tarjeta">
-        <div class="row justify-content-center g-0">
-            <div class="container col-12 col-sm-8 col-md-10 col-lg-4 pt-2 g-0" id="formulario">
-                <div class="p-4 rounded-4 text-center" id="card">
-                    <div class="container">
-                        <div class="row">
-                            <!-- === Logo y encabezado de Coffee Kode === -->
-                            <div class="col-4" id="logo">
-                                <img src="../assets/img/Coffe Kode.png" alt="login-icon" width="70px">
-                            </div>
-                            <div class="col-8" id="encabezado">
-                                <div class="col-12">    
-                                    <h4 id="tituloCoffeeKode">¡Bienvenido!</h4>
-                                </div>
-                                <div class="col-12">
-                                    <h5 id="tituloLogin">Regístrate</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ==== Email y password ==== -->
-                    <div class="col-lg-12 pt-2 prueba_inputs">
-                        <form id="formulario-registrarse">
-                            <div class="mx-2 mb-1 mt-1">
-                                <label for="text" class="form-label mb-0 is-required" id="firstName">Nombre</label>
-                                <input type="text" class="form-control" placeholder="Escribe tu nombre" name="firstName" id="firstNamePlaceholder" required>
-                            </div>
-                            <div class="mx-2 mb-1">
-                                <label for="password" class="form-label mb-0 is-required" id="lastName">Apellido(s)</label>
-                                <input type="text" class="form-control" placeholder="Escribe tu(s) apellido(s)" id="lastNamePlaceholder" name="lastName" required>
-                            </div>
-                            <div class="mx-2 mb-1">
-                                <label for="dob" class="form-label mb-0 is-required" id="birthDate">Fecha de nacimiento:</label>
-                                <input type="text" class="form-control" name="dob" id="dob" placeholder="dd/mm/yyyy">
-
-                            </div>
-
-                    </div>
-                    <!-- ==== Botón Interactivo ====-->
-                    <div class="container text center">
-                        <div class="row">
-                            <div class="col">
-                                <div class="d-flex align-items-center mt-3">
-                                    <button class="learn-more w-100">
-                                        <span class="circle" aria-hidden="true">
-                                        <span class="icon arrow"></span>
-                                        </span>
-                                        <span class="button-text" type="submit"><a href="./Registrate2.html">CONTINUAR</a></span>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                        </div>
-                    </div>            
-    
-
-                    <!-- ==== O inicia sesión con Google ==== -->
-                    <div class="container text center">
-                        <div class="row">
-                            <div class="col">
-                                <div class="p-1 mt-1 mb-2">
-                                    <div class="border-bottom text-center" style="height: 0.9rem">
-                                        <span class="bg-white px-2" id="o">o</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ==== Continuar con Google ==== -->
-                    <a href="https://myaccount.google.com/"><div class="container text center">
-                        <div class="btn d-flex gap-2 justify-content-center border mt-1">
-                        <div class="row">
-                            <div class="col-2">
-                                <img src="../assets/img/google.png" alt="Google-icon" width="30px">
-                            </div>
-                            <div class="col-10">        
-                                <div class="fw-semibold text-dark p-2" id="google">Regístrate con Google</div>
-                            </div>
-                        </div>
-                        </div>
-                    </a>
-                    <!-- ==== Regístrate ==== -->
-                    <div class="container text center">
-                        <div class="row">
-                            <div class="col p-0">
-                                <div class="d-flex gap-1 justify-content-center mt-3 mb-2">
-                                    <div id="cuenta">¿Ya tienes una cuenta?</div>
-                                    <a href="./Login.html" class="text-decoration-none fw-semibold" id="registrate">Iniciar Sesión</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
-                </div>    
-            </div>
-        </div>
-    </div>    
-
-
-
-
-    <footer id="footer">
-        <div class="footer-top">
-          <div class="container">
-            <div class="row col-12">
-         
-              <div class="container d-md-flex py-4">
-                <div class="me-md-auto text-center text-md-start">
-                  <div class="copyright">
-                    <strong><span>© 2022 Copyright. Coffee Kode Cyberbug-team. Designed by
-                        <a href="https://github.com/DeshiH/CYBERBUG-Proyecto">Coffee Kode</a></span></strong>
+<!-- ===== Login ===== -->
+<div class="container text-center pt-2" id="tarjeta">
+  <div class="row justify-content-center g-0">
+      <div class="container col-12 col-sm-8 col-md-11 col-lg-5 pt-2 g-0" id="formulario">
+          <div class="p-4 rounded-4 text-center" id="card">
+              <div class="container">
+                  <div class="row">
+                      <!-- === Logo y encabezado de Coffee Kode === -->
+                      <div class="col-4" id="logo">
+                          <img src="../assets/img/Coffe Kode.png" alt="login-icon" width="70px">
+                      </div>
+                      <div class="col-8" id="encabezado">
+                          <div class="col-12">
+                              <h4 id="tituloCoffeeKode">¡Bienvenido!</h4>
+                          </div>
+                          <div class="col-12">
+                              <h5 id="tituloLogin">Regístrate</h5>
+                          </div>
+                      </div>
                   </div>
-                </div>
               </div>
-    
-    
-              <div class="col-md-3 social-links text-center text-md-right pt-3 pt-md-0">
-                <h5>Redes Sociales</h5>
-                <a href="#" class="twitter"><i class="bx bxl-twitter"><img class="rounded-pill"
-                      src="../assets/img/facebook.png" width="50px" alt="Facebook" /></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"><img class="rounded-pill"
-                      src="../assets/img/linkedin.png" width="50px" alt="Linkedin" /></i></a>
-                <a href="#" class="Github"><i class="bx bxl-instagram"><img src="../assets/img/github.png" width="50px"
-                      alt="Facebook" /></i></a>
+              <!-- ==== Inputs Nombre, Apellidos, Fecha de nacimiento ==== -->
+              <div class="col-lg-12 pt-2 prueba_inputs">
+                  <form action="" class="formulario" id="formulario-registrarse">
+                      <!-- === Grupo: nombre === -->
+                      <div class="formulario__grupo mx-2 mb-1 mt-1" id="grupo__usuario">
+                          <label for="firstName" class="form-label mb-0 is-required" id="firstName">Nombre</label>
+                          <input id="nombre" type="text" name="firstName" class="form-control formulario__input" placeholder="Escribe tu nombre" required>
+                      </div>
+                      <!-- === Grupo: apellido === -->
+                      <div class="formulario__grupo mx-2 mb-1 pt-2" id="grupo__apellido">
+                          <label for="lastName" class="form-label mb-0 is-required" id="lastName">Apellido(s)</label>
+                          <input id="apellido" type="text" class="form-control formulario__input" placeholder="Escribe tu(s) apellido(s)" name="lastName" required>
+                      </div>
+
+                      <!-- === Fecha de nacimiento === -->
+                      <div>
+                          <div class="mx-2 mb-1 pt-2">
+                              <label for="selectMes" class="form-label mb-0 is-required formulario__input"
+                                  id="fechaNacimiento">Fecha de nacimiento</label>
+                              <div class="row">
+                                  <div class="col-4 pe-1">
+                                      <select class="form-select dia" name="day" id="day">
+                                          <option disabled selected>Día</option>
+                                      </select>
+                                      <i class="fas fa-angle-down"></i>
+                                  </div>
+                                  <div class="col-4 ps-1 pe-1">
+                                      <select class="form-select mes" name="month" id="month">
+                                          <option disabled selected>Mes</option>
+                                      </select>
+                                      <i class="fas fa-angle-down"></i>
+                                  </div>
+                                  <div class="col-4 ps-1">
+                                      <select class="form-select year" name="year" id="year">
+                                          <option disabled selected>Año</option>
+                                      </select>
+                                      <i class="fas fa-angle-down"></i>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                  <!-- === Grupo: correoElectrónico === -->
+                  <div class="formulario__grupo mx-2 mb-1 pt-2" id="grupo__email">
+                      <label for="email" class="form-label mb-0 is-required" id="email_label">Correo Electrónico</label>
+                      <input type="email" class="form-control formulario__input" placeholder="Escribe aquí tu correo electrónico" name="email" id="email" required>
+                  </div>
+                  <!-- === Grupo: password  === -->
+                  <div class="formulario__grupo mx-2 mb-1 pt-2" id="grupo__password" >
+                      <label for="password" class="form-label mb-0 is-required" id="password_label">Contraseña</label>
+                      <input type="password" class="form-control formulario__input" placeholder="Contraseña (al menos 8 caracteres)" id="password" name="password" required>
+                  </div>
+                  <!-- === Grupo: confirmar password === -->
+                  <div class="formulario__grupo mx-2 mb-1 pt-2" id="grupo__password">
+                      <label for="password" class="form-label mb-0 is-required" id="password_label">Confirmar contraseña</label>
+                      <input type="password" class="form-control formulario__input" placeholder="Confirma tu contraseña (al menos 8 caracteres)" id="passwordConfirm" name="password" required>
+                  </div>
+                      <!-- ==== Botón Interactivo ====-->
+                      <div class="container col-10 text center">
+                          <div class="row">
+                              <div class="col">
+                                  <a href="#">
+                                      <div class="d-flex align-items-center mt-3">
+                                      <button type="button" class="learn-more w-100">
+                                          <span class="circle" aria-hidden="true">
+                                              <span class="icon arrow"></span>
+                                          </span>
+                                          <span class="button-text">CONTINUAR</span>
+                                      </button>
+                                      </div>
+                                  </a>
+                              </div>
+                  </form>
               </div>
+          </div>
+
+
+          <!-- ==== O inicia sesión con Google ==== -->
+          <div class="container text center">
+              <div class="row">
+                  <div class="col">
+                      <div class="p-1 mt-1 mb-2">
+                          <div class="border-bottom text-center" style="height: 0.9rem">
+                              <span class="bg-white px-2" id="o">o</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- ==== Continuar con Google ==== -->
+          <a href="https://myaccount.google.com/">
+              <div class="container text center">
+                  <div class="btn d-flex gap-2 justify-content-center border mt-1">
+                      <div class="row">
+                          <div class="col-2">
+                              <img src="../assets/img/google.png" alt="Google-icon" width="30px">
+                          </div>
+                          <div class="col-10">
+                              <div class="fw-semibold text-dark p-2" id="google">Regístrate con Google</div>
+                          </div>
+                      </div>
+                  </div>
+          </a>
+          <!-- ==== ¿Tienes una cuenta? ==== -->
+          <div class="container text center">
+              <div class="row">
+                  <div class="col p-0">
+                      <div class="d-flex gap-1 justify-content-center mt-3 mb-2">
+                          <div id="cuenta">¿Tienes una cuenta?</div>
+                          <a href="./Login.html" class="text-decoration-none fw-semibold" id="registrate">Iniciar
+                              Sesión</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row col-12">
+   
+        <div class="container d-md-flex py-4">
+          <div class="me-md-auto text-center text-md-start">
+            <div class="copyright">
+              <strong><span>© 2022 Copyright. Coffee Kode Cyberbug-team. Designed by
+                  <a href="https://github.com/DeshiH/CYBERBUG-Proyecto">Coffee Kode</a></span></strong>
             </div>
           </div>
         </div>
-    
-    
-      </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="../assets/js/Registro.js"></script>
+
+        <div class="col-md-3 social-links text-center text-md-right pt-3 pt-md-0">
+          <h5>Redes Sociales</h5>
+          <a href="#" class="twitter"><i class="bx bxl-twitter"><img class="rounded-pill"
+                src="../assets/img/facebook.png" width="50px" alt="Facebook" /></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"><img class="rounded-pill"
+                src="../assets/img/linkedin.png" width="50px" alt="Linkedin" /></i></a>
+          <a href="#" class="Github"><i class="bx bxl-instagram"><img src="../assets/img/github.png" width="50px"
+                alt="Facebook" /></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+  crossorigin="anonymous"></script>
+<script src="../assets/js/Registrate1.js"></script>
 </body>
 </html>

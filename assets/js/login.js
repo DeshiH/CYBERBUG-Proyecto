@@ -1,13 +1,4 @@
-const loginjs = document.getElementById('formulario-login');
-const mail = document.getElementById('emailPlaceholder');
-const password = document.getElementById('passwordPlaceholder');
 const check = document.getElementById('recuerdame-check');
-
-loginjs.addEventListener('submit', function(e){
-    e.preventDefault();
-    console.log(mail.value);
-    console.log(password.value);
-});
 
 check.addEventListener('submit', function(e){
     e.preventDefault();
@@ -17,3 +8,27 @@ check.addEventListener('submit', function(e){
             console.log("No recordar");
         }
 });
+
+//////////* REGEX //////////////*
+var email = document.getElementById('emailPlaceholder').value;
+var password = document.getElementById('passwordPlaceholder').value;
+
+function validarEmail(email) {
+    let regex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+    if (regex.test(email)) {
+        return true;
+    } else {
+        alert("Escriba correctamente su correo electrónico");
+        return false;
+    }
+}
+
+function validarPassword(password) {
+    var regex = /^(?=.[a-z])(?=.[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8,}$/;
+    if (regex.test(password)) {
+        return true;
+    } else {
+        alert("La contraseña debe tener al menos 8 caracteres");
+        return false;
+    }
+}

@@ -1,0 +1,149 @@
+body{
+
+    background-image: url(../../assets/img/patron.png);
+    background-size:contain;
+    background-color: bisque;
+    background-repeat:initial;
+    background-position: center;
+    position:relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#navbarNav,.container-fluid{
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+    background-color: rgb(244, 213, 141);
+ 
+ }
+ 
+ .navbar{
+   
+   padding: 0;
+  
+ }
+ 
+ 
+ 
+ .search{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 5px;
+  height: 35px;
+ }
+ 
+ .search_button{
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-bottom: 5px;
+  height: 35px;
+ }
+ 
+ a {
+  color: #A05C2D;
+  text-decoration: none;
+ }
+ 
+ a:hover {
+  color: #A05C2D;
+  text-decoration: none;
+ }
+ 
+ .nav-link{
+    
+    color: #344E41;
+ }
+ 
+ .font-navbar{
+  font-family: 'Fraunces', serif;
+ }
+ 
+ .title{
+    color: rgb(160, 92, 45);
+    font-family: 'Fraunces', serif;
+    text-decoration: none;
+    
+ }
+  
+  
+  
+  
+ 
+ footer{
+    padding: 20px;
+     margin-top: 100px;
+    background-color: rgb(244, 213, 141);
+ }
+
+
+
+#encabezado{
+  font-family: 'Fraunces', serif;
+}
+
+#tarjeta{
+  align-self: center;
+  margin-top: 100px;
+  margin-bottom: 16px;
+  width: auto;
+  height: 500px;
+}
+
+#formulario{
+  padding: 30px;
+}
+.center{
+  margin:auto;
+}
+
+#card{
+  background-color:white;
+  -webkit-box-shadow: 1px 2px 16px 0px #000000; 
+  box-shadow: 1px 2px 16px 0px #000000;
+
+}
+/*
+#login-icon, #password-icon{
+  background-color:bisque;
+}*/
+
+.prueba_inputs{
+  text-align: left;
+}
+#logo{
+  align-items: center;
+}
+
+#iniciarSesion{
+  color:ghostwhite;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#cuenta, #registrate{
+  font-size: 12px;
+}
+
+#email_label, #password_label, #ModalLabel{
+  font-size: 18px;
+}
+
+.is-required:after {
+  content: '*';
+  margin-left: 3px;
+  color:red;
+  font-weight:lighter;
+}
+
+#emailPlaceholder , #passwordPlaceholder{
+  font-size: 14px;
+}
+
+#button_normal, #boton_modal{
+  background-color:#344E41;
+  color: white;
+}
+
+.recuperacion{
+  color: white;
+}

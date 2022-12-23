@@ -1,9 +1,12 @@
 /* Estilos Generales */
 body{
-    background-image: 
-    url(../../assets/img/patron.png);
-    background-size: 100%;
-    background-repeat: repeat;   
+  background-image: url(../img/patron.png);
+  background-size:contain;
+  background-color: bisque;
+  background-repeat:initial;
+  background-position: center;
+  position:relative;
+  font-family: 'Montserrat', sans-serif;
   }
   
   h1,h2{
@@ -24,7 +27,7 @@ body{
   }
   
   h4{
-    font-family:'Montserrat', sans-serif;
+    font-family:'Fraunces', sans-serif;
     font-size:xx-large;
     font-weight: normal; 
     text-align:center;
@@ -60,40 +63,6 @@ body{
       align-self: center;
   }
   
-  /*--------------------------------------------------------------
-  # Estilos Nav Bar
-  --------------------------------------------------------------*/
-  
-  #header {
-    font-family: 'Fraunces', serif;
-    color: #444444;
-  }
-  
-  a {
-    color: #3498db;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #5faee3;
-    text-decoration: none;
-  }
-  
-  /*Paleta de colores
-  #344E41
-  #A05C2D
-  #F4D58D
-  #
-   */
-  
-  /**{
-      font-family: 'Montserrat', sans-serif;
-      font-family: 'Fraunces', serif;
-  }*/
-  
-  /*--------------------------------------------------------------
-  # NavBar
-  --------------------------------------------------------------*/
 
   #navbarNav,.container-fluid{
     justify-content: center;
@@ -151,13 +120,6 @@ a:hover {
     
 }
   
-  .title h2{
-    color: rgb(160, 92, 45);
-    font-family: 'Fraunces', serif;
-    text-decoration: none;
-    
-  }
-  
   
   /*--------------------------------------------------------------
   # Estilos About Us
@@ -165,7 +127,7 @@ a:hover {
 
 
   body{
-    background-image: url(/assets/img/patron.png);
+    background-image: url(../img/patron.png);
     background-size:contain;
     text-align: center;
     background-color: bisque;
