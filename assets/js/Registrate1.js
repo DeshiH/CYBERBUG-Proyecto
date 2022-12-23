@@ -127,7 +127,7 @@ function validarApellido(apellido) {
 
     function crearJSON() {
         var usuario = {
-            fisrtname: nombre.value,
+            firstname: nombre.value,
             lastname: apellido.value,
             birthdate: selectDia.value + "/" + selectMes.value + "/" + selectAño.value ,
             username: email.value,
