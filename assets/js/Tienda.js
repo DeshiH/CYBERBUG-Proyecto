@@ -530,7 +530,7 @@ function mostrarCarrito() {
 
 function borrarItemCarrito(evento) {
     // Obtenemos el producto ID que hay en el boton pulsado
-    const id = evento.target.dataset.item;
+    const id = parseInt(evento.target.dataset.item);
     // Borramos todos los productos
     carrito = carrito.filter((carritoId) => {
         return carritoId !== id;
