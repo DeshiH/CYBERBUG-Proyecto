@@ -144,7 +144,7 @@ function validarApellido(apellido) {
         var usuario = crearJSON();
 
         if (validarConfirmPassword(usuario.password, passwordConfirm.value) == true){
-            fetch ('http://localhost:8080/api/CoffeeKode/users', { // La direccion que creamos en JAVA
+            fetch ('https://apicoffeekode-production.up.railway.app/api/CoffeeKode/users', { // La direccion que creamos en JAVA
     method: 'POST', // el método que  voy a utilizar
     headers: {
         'Content-type': 'application/json' // El tipo de contenido que usamos es JSON
