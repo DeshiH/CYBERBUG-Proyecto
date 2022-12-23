@@ -162,7 +162,7 @@ function validarApellido(apellido) {
             confirmButtonColor: '#344E41',
           }).then((result) => {
             if (result.isConfirmed) {
-                window.location.href="../../html/Login.html"
+                window.location.href="https://deshih.github.io/CYBERBUG-Proyecto/html/Login.html"
             }
           });
     })
