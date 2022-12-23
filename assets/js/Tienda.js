@@ -462,6 +462,20 @@ function añadirProductoAlCarrito(evento) {
     // Actualizamos el carrito 
     mostrarCarrito();
     guardarCarritoEnLocalStorage();
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 1500,
+        timerProgressBar: true,
+        
+    });
+    Toast.fire({
+        icon: 'success',
+        titleText: '¡Producto agregado con éxito!',
+        background: '#4c7661',
+        color: '#FFFFFF'
+    })
 
 }
 
